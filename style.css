@@ -41,8 +41,19 @@ label{
 
 /* Estilos de la caja pasiva y activa */
 .caja-pasiva, .caja-activa {
+    flex-wrap: wrap;
+    text-align: center;
     flex: 0 0 30%; /* Asignar un ancho del 30% al elemento */
     align-self: center; /* Centrar el elemento verticalmente */
+    justify-content: center;
+    background-color: #edf6f9;
+    height: 70vh;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0px 4px 4px 8px #00000014;
+    justify-content: center;
 }
 
 /* Estilos para ocultar y mostrar la caja activa */
@@ -61,7 +72,7 @@ label{
     font-weight: 600;
     border: none;
     outline: none;
-    width: 90%; /* Asignar un ancho del 90% al elemento */
+    width: 70%; /* Asignar un ancho del 90% al elemento */
     height: 480px; /* Asignar una altura de 200px al elemento */
     resize: none; /* Evitar que se pueda cambiar el tamaño del elemento */
     padding: 10px; /* Dejar un espacio alrededor del texto */
