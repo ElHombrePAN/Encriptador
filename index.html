@@ -15,7 +15,7 @@
     <script src="main.js"></script>
     <div class="contenedor">
         <form>
-            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required></textarea>
+            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required id="original"></textarea>
             <br>
             <label for="encriptar">Solo letras minusculas y sin acento</label>
             <br>
@@ -31,7 +31,7 @@
     </div>
     <div class="activo">
         <form>
-            <textarea readonly></textarea>
+            <textarea readonly id="textoEncriptado"></textarea>
             <br>
             <input type="button" name="copiar" value="copiar"></button>
         </form>

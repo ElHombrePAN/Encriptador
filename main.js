@@ -1,5 +1,5 @@
 let saludo = "Bienvenido";
-console.log(`${a} estamos probando la conexion de JS`);
+console.log(`${saludo} estamos probando la conexion de JS`);
 
 /*
 LLaves para el encriptador
@@ -23,5 +23,27 @@ gaitober" => "gato"
 
 */
 
+//creando un objeto con las llaves
+let llaves = {
+    "e": "enter",
+    "i": "imes",
+    "a": "ai",
+    "o": "ober",
+    "u": "ufat" 
+}
 
+function encriptar(texto) {
+    return texto.replace(/[aeiou]/g, function(match) { //usando expresiones regulares con el modificador global
+      return llaves[match];
+    });
+  }
+//https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions
+//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/match
 
+  
+let textoOriginal = "Hola mundo"
+let textoEncriptado = encriptar(textoOriginal);
+
+console.log(llaves);
+console.log(textoOriginal); // hola mundo
+console.log(textoEncriptado); // hoberlai mufatndober
