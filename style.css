@@ -3,10 +3,10 @@ body{
     background: linear-gradient(90deg, rgba(117,127,178,1) 0%, rgba(233,236,248,1) 100%);
 }
 
-textarea{
-    margin-bottom: 15px;
-}
-
-h1{
-    color: rgb(37, 44, 66);
-}
+.btn-svg {
+    background-image: url("/assets/candado_lock.svg");
+    background-size: 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+  }
