@@ -12,7 +12,7 @@
     <h3>Proyecto de Encriptador</h3>
 </header>
 <body>
-    <div>
+    <div class="contenedor">
         <form>
             <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required></textarea>
             <br>
@@ -22,9 +22,13 @@
             <input type="button" value="Desencriptar" id="desencriptar" name="Desencriptar">
             <input type="reset">
         </form>
-    <img src="/imagenes/muñeco.svg">
     </div>
-    <div>
+    <div class="pasivo">
+        <img src="/imagenes/muñeco.svg">
+        <h3>Ningun mensaje fue encontrado</h3>
+        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+    </div>
+    <div class="activo">
         <form>
             <textarea readonly></textarea>
             <br>

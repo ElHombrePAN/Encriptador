@@ -1,6 +1,6 @@
 body{
-    background: rgb(148,187,233);
-    background: linear-gradient(90deg, rgba(148,187,233,1) 0%, rgba(176,174,238,1) 100%);
+    background: rgb(117,127,178);
+    background: linear-gradient(90deg, rgba(117,127,178,1) 0%, rgba(233,236,248,1) 100%);
 }
 
 textarea{
