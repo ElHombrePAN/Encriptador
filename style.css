@@ -1,12 +1,7 @@
-body{
-    background: rgb(117,127,178);
-    background: linear-gradient(90deg, rgba(117,127,178,1) 0%, rgba(233,236,248,1) 100%);
+.cabecera{
+    color: rgb(10, 40, 75);
 }
 
-.btn-svg {
-    background-image: url("/assets/candado_lock.svg");
-    background-size: 30px;
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-  }
+.body{
+    background: linear-gradient(90deg, rgba(117,127,178,1) 0%, rgba(233,236,248,1) 100%);
+}
