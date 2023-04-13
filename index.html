@@ -15,11 +15,11 @@
     <script src="main.js"></script>
     <div class="contenedor">
         <form>
-            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required id="original"></textarea>
+            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required id="textoOriginal"></textarea>
             <br>
             <label for="encriptar">Solo letras minusculas y sin acento</label>
             <br>
-            <input type="button" value="Encriptar" id="encriptar" name="Encriptar">
+            <input type="button" value="Encriptar" id="encriptar" name="Encriptar" required onclick="procesar()">
             <input type="button" value="Desencriptar" id="desencriptar" name="Desencriptar">
             <input type="reset">
         </form>

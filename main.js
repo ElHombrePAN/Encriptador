@@ -44,6 +44,16 @@ function encriptar(texto) {
 let textoOriginal = "Hola mundo"
 let textoEncriptado = encriptar(textoOriginal);
 
+//Crear los botones
 console.log(llaves);
 console.log(textoOriginal); // hola mundo
 console.log(textoEncriptado); // hoberlai mufatndober
+
+
+function procesar(){
+    let entrada = document.getElementById("textoOriginal");
+    let salida = document.getElementById("textoEncriptado");
+    let texto = entrada.value;
+    let resultado = encriptar(texto);
+    salida.value = resultado;
+}
