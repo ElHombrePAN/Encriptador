@@ -36,10 +36,10 @@ function encriptar(texto) {
     return texto.replace(/[aeiou]/g, function(match) { //usando expresiones regulares con el modificador global
       return llaves[match];
     });
-  }
+    }
 function desencriptar(texto) {
     return texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
-  }
+    }
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/match
 
@@ -49,7 +49,7 @@ function procesar(){
     let texto = entrada.value;
     let resultado = encriptar(texto);
     salida.value = resultado;
-}
+    }
 
 function procesarDesencriptar(){
     let entrada = document.getElementById("textoOriginal");
@@ -57,7 +57,7 @@ function procesarDesencriptar(){
     let texto = entrada.value;
     let resultado = desencriptar(texto);
     salida.value = resultado;
-}
+    }
 
 function copiarAlPortapapeles() {
     let texto = document.getElementById("textoEncriptado").value;
@@ -68,7 +68,11 @@ function copiarAlPortapapeles() {
     .catch((error) => {
       console.error("Error al copiar el texto: ", error);
     });
-  }
+    }
+
+function borrarSegundoTextarea() {
+    document.getElementById("textoEncriptado").value = "";
+    }  
 
 let textoOriginal = "Hola mundo"
 let textoEncriptado = encriptar(textoOriginal);
