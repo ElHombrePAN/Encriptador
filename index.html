@@ -14,13 +14,20 @@
 <body>
     <div>
         <form>
-            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1" cols="60" rows="14" wrap="hard" required></textarea>
+            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required></textarea>
             <br>
             <label for="encriptar">Solo letras minusculas y sin acento</label>
             <br>
             <input type="button" value="Encriptar" id="encriptar" name="Encriptar">
             <input type="button" value="Desencriptar" id="desencriptar" name="Desencriptar">
             <input type="reset">
+        </form>
+    </div>
+    <div>
+        <form>
+            <textarea readonly></textarea>
+            <br>
+            <input type="button" name="copiar" value="copiar"></button>
         </form>
     </div>
 </body>
