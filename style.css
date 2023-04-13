@@ -1,0 +1,12 @@
+body{
+    background: rgb(148,187,233);
+    background: linear-gradient(90deg, rgba(148,187,233,1) 0%, rgba(176,174,238,1) 100%);
+}
+
+textarea{
+    margin-bottom: 15px;
+}
+
+h1{
+    color: rgb(37, 44, 66);
+}
