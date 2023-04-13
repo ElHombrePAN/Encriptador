@@ -81,3 +81,23 @@ let textoEncriptado = encriptar(textoOriginal);
 console.log(llaves);
 console.log(textoOriginal); // hola mundo
 console.log(textoEncriptado); // hoberlai mufatndober
+
+function mostrarOcultarDivs() {
+    setTimeout(() => {
+    let texto = document.getElementById("textoOriginal").value;
+    let divPasivo = document.getElementById("pasivo");
+    let divActivo = document.getElementById("activo");
+    let textoEncriptado = document.getElementById("textoEncriptado");
+    if (texto == "") {
+      // Si el primer textarea está vacío, mostrar el div pasivo y ocultar el div activo
+      divPasivo.style.display = "block";
+      divActivo.style.display = "none";
+    } else {
+      // Si el primer textarea tiene algún valor, ocultar el div pasivo y mostrar el div activo
+      divPasivo.style.display = "none";
+      divActivo.style.display = "block";
+      // Asignar el valor del primer textarea al segundo
+      textoEncriptado.value = texto;
+    }
+    }, 0); // El tiempo de espera es 0 milisegundos
+}

@@ -14,8 +14,8 @@
 <body>
     <script src="main.js"></script>
     <div class="contenedor">
-        <form>
-            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required id="textoOriginal"></textarea>
+        <form onreset="mostrarOcultarDivs()">
+            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
             <br>
             <label for="encriptar">Solo letras minusculas y sin acento</label>
             <br>
@@ -24,12 +24,12 @@
             <input type="reset" onclick="borrarSegundoTextarea()">
         </form>
     </div>
-    <div class="pasivo">
+    <div class="pasivo" id="pasivo">
         <img src="/imagenes/muñeco.svg">
         <h3>Ningun mensaje fue encontrado</h3>
         <p>Ingresa el texto que desees encriptar o desencriptar</p>
     </div>
-    <div class="activo">
+    <div class="activo" id="activo">
         <form>
             <textarea readonly id="textoEncriptado"></textarea>
             <br>
