@@ -19,8 +19,8 @@
             <br>
             <label for="encriptar">Solo letras minusculas y sin acento</label>
             <br>
-            <input type="button" value="Encriptar" id="encriptar" name="Encriptar" required onclick="procesar()">
-            <input type="button" value="Desencriptar" id="desencriptar" name="Desencriptar">
+            <input type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
+            <input type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
             <input type="reset">
         </form>
     </div>
@@ -33,7 +33,7 @@
         <form>
             <textarea readonly id="textoEncriptado"></textarea>
             <br>
-            <input type="button" name="copiar" value="copiar"></button>
+            <input type="button" name="copiar" value="copiar" onclick="copiarAlPortapapeles()"></button>
         </form>
     </div>
 </body>
