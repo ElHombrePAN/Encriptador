@@ -1,7 +1,91 @@
-.cabecera{
-    color: rgb(10, 40, 75);
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    border: none;
 }
 
-.body{
+html{
     background: linear-gradient(90deg, rgba(117,127,178,1) 0%, rgba(233,236,248,1) 100%);
+}
+
+h1{
+    color: rgb(25, 26, 73);;
+    padding: 10px;
+    margin: 20px;
+}
+
+label{
+    display: block;
+    color: rgba(0, 0, 0, 0.856);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten al ancho de la pantalla */
+    justify-content: space-between; /* Dejar un espacio entre los elementos */
+    align-items: center; /* Centrar los elementos verticalmente */
+    max-width: 1200px; /* Definir un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 20px; /* Dejar un espacio alrededor del contenedor */
+}
+
+/* Estilos de la caja primaria */
+.caja-primaria {
+    flex: 0 0 70%; /* Asignar un ancho del 70% al elemento */
+    align-self: center; /* Centrar el elemento verticalmente */
+}
+
+/* Estilos de la caja pasiva y activa */
+.caja-pasiva, .caja-activa {
+    flex: 0 0 30%; /* Asignar un ancho del 30% al elemento */
+    align-self: center; /* Centrar el elemento verticalmente */
+}
+
+/* Estilos para ocultar y mostrar la caja activa */
+.caja-activa {
+    display: none; /* Ocultar la caja activa por defecto */
+}
+
+.caja-activa.mostrar {
+    display: block; /* Mostrar la caja activa cuando tenga la clase mostrar */
+}
+
+.textarea {
+    background: linear-gradient(90deg, rgba(117,127,178,1) 0%, rgba(233,236,248,1) 100%);
+    background: fixed;
+    font-size: x-large;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    width: 90%; /* Asignar un ancho del 90% al elemento */
+    height: 480px; /* Asignar una altura de 200px al elemento */
+    resize: none; /* Evitar que se pueda cambiar el tamaño del elemento */
+    padding: 10px; /* Dejar un espacio alrededor del texto */
+}
+
+.textarea::placeholder{
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(25, 26, 73);
+}
+
+.boton{
+    border: 1px solid  rgb(12, 41, 95);
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: rgba(233,236,248,1);
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.boton:hover{
+    background-color: rgb(13, 18, 39);
+    color: azure;
 }
