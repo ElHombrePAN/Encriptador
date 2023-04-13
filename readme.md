@@ -1,5 +1,4 @@
-Esto es para el proyecto de Encriptador de      
-
+Esto es para el proyecto de Encriptador de  
 ORACLE ONE NEXT EDUCATION  
 
 
