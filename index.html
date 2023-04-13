@@ -7,33 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
-<header>
+<header class="cabecera">
     <h1>Alura</h1>
     <h3>Proyecto de Encriptador</h3>
 </header>
-<body>
+<body class="body">
     <div class="contenedor">
-        <form onreset="mostrarOcultarDivs()">
-            <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
-            <br>
-            <label for="encriptar">Solo letras minusculas y sin acento</label>
-            <br>
-            <input class="btn-svg" type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
-            <input type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
-            <input type="reset" onclick="borrarSegundoTextarea()">
-        </form>
-    </div>
-    <div class="pasivo" id="pasivo">
-        <img src="/assets/muñeco.svg">
-        <h3>Ningun mensaje fue encontrado</h3>
-        <p>Ingresa el texto que desees encriptar o desencriptar</p>
-    </div>
-    <div class="activo" id="activo" style="display: none;">
+        <div>
+            <form onreset="mostrarOcultarDivs()">
+                <textarea placeholder="Ingrese el texto aqui" name="texto" minlength="1"required id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
+                <br>
+                <label for="encriptar">Solo letras minusculas y sin acento</label>
+                <br>
+                <input class="btn-svg" type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
+                <input type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
+                <input type="reset" onclick="borrarSegundoTextarea()">
+            </form>
+        </div>
+        <div class="pasivo" id="pasivo">
+            <img src="/assets/muñeco.svg">
+            <h3>Ningun mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+            <div class="activo" id="activo" style="display: none;">
         <form>
             <textarea readonly id="textoEncriptado"></textarea>
             <br>
             <input type="button" name="copiar" value="copiar" onclick="copiarAlPortapapeles()"></button>
         </form>
+    </div>
     </div>
     <script src="main.js"></script>
 </body>
