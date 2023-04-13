@@ -1,29 +1,3 @@
-let saludo = "Bienvenido";
-console.log(`${saludo} estamos probando la conexion de JS`);
-
-/*
-LLaves para el encriptador
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-
-Requisitos:
-
-Debe funcionar solo con letras minúsculas
-
-No deben ser utilizados letras con acentos ni caracteres especiales
-
-Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-
-Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
-
-*/
-
-//creando un objeto con las llaves
 let llaves = {
     "e": "enter",
     "i": "imes",
@@ -43,6 +17,7 @@ function desencriptar(texto) {
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/match
 
+//encriptar
 function procesar(){
     let entrada = document.getElementById("textoOriginal");
     let salida = document.getElementById("textoEncriptado");
@@ -51,6 +26,7 @@ function procesar(){
     salida.value = resultado;
     }
 
+//desencriptar
 function procesarDesencriptar(){
     let entrada = document.getElementById("textoOriginal");
     let salida = document.getElementById("textoEncriptado");
@@ -59,6 +35,7 @@ function procesarDesencriptar(){
     salida.value = resultado;
     }
 
+//copiar
 function copiarAlPortapapeles() {
     let texto = document.getElementById("textoEncriptado").value;
     navigator.clipboard.writeText(texto)
@@ -70,18 +47,12 @@ function copiarAlPortapapeles() {
     });
     }
 
+//Boton restablecer
 function borrarSegundoTextarea() {
     document.getElementById("textoEncriptado").value = "";
     }  
-
-let textoOriginal = "Hola mundo"
-let textoEncriptado = encriptar(textoOriginal);
   
-  //Crear los botones
-console.log(llaves);
-console.log(textoOriginal); // hola mundo
-console.log(textoEncriptado); // hoberlai mufatndober
-
+  //Ocultar Divs
 function mostrarOcultarDivs() {
     setTimeout(() => {
     let texto = document.getElementById("textoOriginal").value;
