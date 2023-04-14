@@ -9,7 +9,7 @@ html{
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     filter: brightness(150%);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 @keyframes gradient {
@@ -77,6 +77,7 @@ html{
 
 .informacion{
     color: rgb(238, 243, 243);
+    font-size: 18px;
     background: fixed;
     border-radius: 8px;
     text-align: center;
@@ -108,10 +109,17 @@ label{
     width: 20%;
     background-color: rgb(10, 56, 113);
     color: azure;
+    font-size: 16px;
     border: none;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
+}
+
+.copiar {
+  width: 80%;
+  margin: 5px auto;
+  display: block;
 }
 
 .boton:hover{
@@ -138,7 +146,8 @@ footer{
     width: 100%;
     background-color: rgb(17, 17, 17);
     color: rgb(238, 243, 243);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     text-align: center;
+    padding: 6px;
 }
