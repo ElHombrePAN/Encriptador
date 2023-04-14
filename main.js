@@ -41,6 +41,7 @@ function copiarAlPortapapeles() {
     navigator.clipboard.writeText(texto)
     .then(() => {
       console.log("Texto copiado al portapapeles");
+      myFunction("Texto copiado al portapapeles");
     })
     .catch((error) => {
       console.error("Error al copiar el texto: ", error);

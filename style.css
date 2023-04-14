@@ -5,11 +5,11 @@
 }
 
 html{
-    background: linear-gradient(90deg, rgb(22, 35, 56) 0%, rgb(34, 22, 56) 100%);
+    background: linear-gradient(90deg, rgb(22, 35, 56) 0%, rgb(19, 14, 29) 100%);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     filter: brightness(150%);
-    font-family: 'Montserrat','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Ubuntu','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 @keyframes gradient {
@@ -29,7 +29,7 @@ html{
     align-items: center;
     padding-top: 20px;
     padding-left: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     color: rgb(238, 243, 243);
     margin: 14px;
 }
@@ -58,7 +58,7 @@ html{
 .textarea-original{
     background: fixed;
     color: rgb(238, 243, 243);
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 8px;
     border: none;
     resize: none;
@@ -72,12 +72,13 @@ html{
 
 .textarea-original::placeholder {
     color: rgb(238, 243, 243);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .informacion{
     color: rgb(238, 243, 243);
-    font-size: 18px;
+    font-size: 26px;
+    font-weight: normal;
     background: fixed;
     border-radius: 8px;
     text-align: center;
@@ -90,7 +91,7 @@ html{
 .textarea-modificada    {
     background: fixed;
     color: rgb(202, 204, 204);
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 8px;
     resize: none;
     width: 100%;
@@ -151,3 +152,4 @@ footer{
     text-align: center;
     padding: 6px;
 }
+
