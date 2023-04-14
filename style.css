@@ -51,6 +51,7 @@ html{
     flex-basis: 60%;
 }
 
+
 .texto-codificado {
     flex-basis: 40%;
   }
@@ -107,6 +108,7 @@ label{
 }
 
 .boton{
+    text-align: center;
     width: 20%;
     background-color: rgb(10, 56, 113);
     color: azure;
@@ -115,6 +117,7 @@ label{
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
+    word-break: break-all;
 }
 
 .copiar {
@@ -126,20 +129,6 @@ label{
 .boton:hover{
     background-color: rgb(5, 21, 43);
 }
-
-@media (max-width: 768px) {
-    .texto {
-      flex-basis: 100%;
-    }
-  
-    .texto-codificado {
-      flex-basis: 100%;
-    }
-  
-    .informacion {
-      flex-basis: 100%;
-    }
-  }
 
 footer{
     position: fixed;
@@ -169,4 +158,40 @@ footer{
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .texto {
+      flex-basis: 100%;
+    }
+  
+    .texto-codificado {
+      flex-basis: 100%;
+    }
+  
+    .informacion {
+      flex-basis: 100%;
+    }
 
+    /* Ajuste del tamaño de fuente para los botones */
+    .texto .boton {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto {
+      flex-basis: 100%;
+    }
+  
+    .texto-codificado {
+      flex-basis: 100%;
+    }
+  
+    .informacion {
+      flex-basis: 100%;
+    }
+
+    /* Ajuste del tamaño de fuente para los botones */
+    .texto .boton {
+      font-size: 12px;
+    }
+}
