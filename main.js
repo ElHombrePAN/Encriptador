@@ -37,16 +37,19 @@ function procesarDesencriptar(){
 
 //copiar
 function copiarAlPortapapeles() {
-    let texto = document.getElementById("textoEncriptado").value;
-    navigator.clipboard.writeText(texto)
+  let texto = document.getElementById("textoEncriptado").value;
+  navigator.clipboard.writeText(texto)
     .then(() => {
       console.log("Texto copiado al portapapeles");
-      myFunction("Texto copiado al portapapeles");
+      document.querySelector('.notificacion').classList.add('show');
+      setTimeout(() => {
+        document.querySelector('.notificacion').classList.remove('show');
+      }, 3000);
     })
     .catch((error) => {
       console.error("Error al copiar el texto: ", error);
     });
-    }
+}
 
 //Boton restablecer
 function borrarSegundoTextarea() {
