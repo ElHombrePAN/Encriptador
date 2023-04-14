@@ -7,33 +7,40 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
-<header>
-    <h1><img src="/assets/alura.svg">Proyecto de Encriptador</h1>
+<header class="header">
+    <h1><img src="/assets/alura.svg" class="alura"> Proyecto de Encriptador</h1>
 </header>
-<body >
-    <section>
-        <form onreset="mostrarOcultarDivs()">
-            <textarea class="textarea" placeholder="Ingrese el texto aqui" name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
-            <br>
-            <label for="encriptar">Solo letras minusculas y sin acento</label>
-            <input class="boton" type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
-            <input class="boton" type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
-            <input class="boton" type="reset" onclick="borrarSegundoTextarea()">
-        </form>
+<body>
+    <section class="principal">
+        <article class="texto">
+            <form onreset="mostrarOcultarDivs()">
+                <textarea class="textarea-original" placeholder="Ingrese el texto aqui" name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
+                <br>
+                <label for="encriptar"> Solo letras minusculas y sin acento</label>
+                <br>
+                <input class="boton" type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
+                <input class="boton" type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
+                <input class="boton" type="reset" onclick="borrarSegundoTextarea()">
+            </form>
+        </article>
+        <article class="informacion" id="pasivo">
+            <img src="/assets/muñeco.svg">
+            <h3>Ningun mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </article>
+        <article class="texto-codificado" id="activo" style="display:none;">
+            <form>
+                <textarea class="textarea-modificada" disabled id="textoEncriptado"></textarea>
+                <br>
+                <label for="copiar">Usa el boton para copiar tu texto</label>
+                <br>
+                <input class="boton" type="button" name="copiar" value="copiar" id="copiar" onclick="copiarAlPortapapeles()"></button>
+            </form>
+        </article>
     </section>
-    <section id="pasivo">
-        <img src="/assets/muñeco.svg">
-        <h3>Ningun mensaje fue encontrado</h3>
-        <p>Ingresa el texto que desees encriptar o desencriptar</p>
-    </section>
-    <section id="activo" style="display:none;">
-        <form>
-            <textarea class="textarea" readonly id="textoEncriptado"></textarea>
-            <br>
-            <label for="copiar">Usa el boton para copiar tu texto</label>
-            <input class="boton" type="button" name="copiar" value="copiar" id="copiar" onclick="copiarAlPortapapeles()"></button>
-        </form>
-    </section>
+    <footer>
+        Creado por Moises Ramirez como parte de los desafios de Oracle Alura
+    </footer>
 <script src="main.js"></script>
 </body>
 </html>     

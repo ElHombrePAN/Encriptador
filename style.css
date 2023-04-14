@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: linear-gradient(90deg, rgb(22, 35, 56) 0%, rgb(34, 22, 56) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    filter: brightness(150%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 48px;
+    padding-bottom: 20px;
+    color: rgb(238, 243, 243);
+    margin: 14px;
+}
+
+.alura{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.principal{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.texto {
+    flex-basis: 60%;
+}
+
+.texto-codificado {
+    flex-basis: 40%;
+  }
+
+.textarea-original{
+    background: fixed;
+    color: rgb(238, 243, 243);
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    width: 67%; /* Ancho relativo al article */
+    height: 420px;
+}
+
+.textarea-original:focus{
+    outline: none;
+}
+
+.textarea-original::placeholder {
+    color: rgb(238, 243, 243);
+    font-size: 18px;
+}
+
+.informacion{
+    color: rgb(238, 243, 243);
+    background: fixed;
+    border-radius: 8px;
+    text-align: center;
+    flex-basis: 40%;
+    width: 100%;
+    height: 420px;
+}
+
+
+.textarea-modificada    {
+    background: fixed;
+    color: rgb(202, 204, 204);
+    font-size: 18px;
+    border-radius: 8px;
+    resize: none;
+    width: 100%;
+    height: 420px; 
+}
+
+.textarea-modificada:focus{
+    outline: none;
+}
+
+label{
+    color: azure;
+}
+
+.boton{
+    width: 20%;
+    background-color: rgb(10, 56, 113);
+    color: azure;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.boton:hover{
+    background-color: rgb(5, 21, 43);
+}
+
+@media (max-width: 768px) {
+    .texto {
+      flex-basis: 100%;
+    }
+  
+    .texto-codificado {
+      flex-basis: 100%;
+    }
+  
+    .informacion {
+      flex-basis: 100%;
+    }
+  }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    color: rgb(238, 243, 243);
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
