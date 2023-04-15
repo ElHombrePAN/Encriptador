@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <header class="header">
-    <h1><img src="./assets/alura.svg" class="alura"> Proyecto de Encriptador</h1>
+    <h1><img src="./assets/alura.svg" class="alura"> Encriptador</h1>
 </header>
 <body id="particulas">
     <section class="principal">
         <article class="texto">
             <form onreset="mostrarOcultarDivs()">
-                <textarea class="textarea-original" placeholder="Ingrese el texto aqui" name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
+                <textarea class="textarea-original" placeholder="Ingrese el texto que deseas encriptar aquí" name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
                 <br>
                 <label for="encriptar"> Solo letras minusculas y sin acento</label>
                 <br>
@@ -40,12 +40,9 @@
             </form>
         </article>
     </section>
-    <footer>
-        Creado por Moises Ramirez como parte de los desafios de Oracle Alura
-    </footer>
 <script src="main.js"></script>
 </body>
 <div class="notificacion" data-duration="3000">
-    Texto copiado a tu portapapeles
+    Texto copiado
   </div>  
 </html>     
