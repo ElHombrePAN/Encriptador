@@ -12,30 +12,28 @@
 <header class="header">
     <h1><img src="./assets/alura.svg" class="alura"> Encriptador</h1>
 </header>
-<body id="particulas">
+<body>
     <section class="principal">
-        <article class="texto">
+        <article class="article-uno">
             <form onreset="mostrarOcultarDivs()">
                 <textarea class="textarea-original" placeholder="Ingrese el texto que deseas encriptar aquí" name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
                 <br>
-                <label for="encriptar"> Solo letras minusculas y sin acento</label>
-                <br>
+                <label class="label" for="encriptar">Solo letras minusculas y sin acento</label>
                 <input class="boton" type="button" value="Encriptar" id="encriptar" name="Encriptar" onclick="procesar()">
                 <input class="boton" type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
                 <input class="boton" type="reset" onclick="borrarSegundoTextarea()">
             </form>
         </article>
-        <article class="informacion" id="pasivo">
-            <img src="./assets/muñeco.svg">
-            <h3>Ningun mensaje fue encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        <article class="article-dos" id="pasivo">
+            <img src="./assets/nuevof.svg" class="imagen-b">
+            <h3 class="mensaje-info">Ningun mensaje fue encontrado</h3>
+            <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
         </article>
-        <article class="texto-codificado" id="activo" style="display:none;">
+        <article class="article-tres" id="activo" style="display:none;">
             <form>
                 <textarea class="textarea-modificada" disabled id="textoEncriptado"></textarea>
                 <br>
-                <label for="copiar">Usa el boton para copiar tu texto</label>
-                <br>
+                <label class="label" for="copiar">Usa el boton para copiar tu texto</label>
                 <input class="boton copiar" type="button" name="copiar" value="copiar" id="copiar" onclick="copiarAlPortapapeles()"></button>
             </form>
         </article>
