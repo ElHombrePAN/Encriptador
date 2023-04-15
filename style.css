@@ -83,15 +83,13 @@ html{
 
 .boton{
   text-align: center;
-  width: 20%;
   background-color: #018673;
   color: rgb(238, 243, 243);
   border: 2px solid #1a2e35;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 40px 10px 40px;
   margin: 5px;
-  word-break: break-all;
 }
 
 .copiar {
@@ -102,7 +100,7 @@ html{
 
 .boton:hover{
   background-color: #1a2e35;
-  border: 1px solid #018673;
+  border: 2px solid #018673;
 }
 
 .notificacion {
