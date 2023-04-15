@@ -124,10 +124,10 @@ html{
   position: fixed;
   top: 50px;
   right: 50px;
-  background-color: #018673;
+  background-color: #1a2e35;
   color: rgb(238, 243, 243);
   padding: 10px;
-  border: 2px solid #1a2e35;
+  border: 2px solid #018673;
   border-radius: 12px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
