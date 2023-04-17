@@ -161,6 +161,7 @@ html:hover{
 .notificacion progress {
   /* Le damos un ancho del 100% del contenedor */
   width: 100%;
+  height: 10px;
   /* Le quitamos el borde por defecto */
   border: none;
   /* Le damos un color de fondo gris claro */
@@ -178,8 +179,6 @@ html:hover{
   /* Le damos un color gris oscuro */
   background-color: #1a2e35;
 }
-
-
 
 @media (max-width: 768px) {
   .texto {
