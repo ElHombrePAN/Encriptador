@@ -94,10 +94,9 @@ html:hover{
   background-color: #018673;
   color: rgb(238, 243, 243);
   border: 2px solid #1a2e35;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 10px;
   padding: 10px 40px 10px 40px;
-  margin: 5px;
 }
 
 .copiar {
