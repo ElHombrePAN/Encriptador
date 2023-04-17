@@ -109,11 +109,16 @@ function mostrarOcultarDivs() {
   }, 0); // El tiempo de espera es 0 milisegundos
 }
 
+//Creamos la variable global para almacenar el identificador del temporizador
+let timerId = null;
 //Creamos la funcion notificacion y creamos la variable notificacion para asignarle una clase y trabajar en CSS
 function mostrarNotificacion(mensajeTexto) {
   mensaje.innerText = mensajeTexto; //se cambia el texto del párrafo por el que se quiere mostrar
   notificacion.classList.add("show");
-  setTimeout(function() {
+  //Cancelamos el temporizador anterior si existe
+  clearTimeout(timerId);
+  //Creamos un nuevo temporizador y guardamos su identificador en la variable timerId
+  timerId = setTimeout(function() {
     notificacion.classList.remove("show");
   }, 3000);
 }
