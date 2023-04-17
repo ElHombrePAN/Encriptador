@@ -16,7 +16,7 @@ html:hover{
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header{
@@ -112,23 +112,52 @@ html:hover{
 }
 
 .notificacion {
-  font-size: 16px;
-  font-weight: bold;
   position: fixed;
-  top: 50px;
-  right: 50px;
+  top: 20px;
+  right: 20px;
   background-color: #1a2e35;
   color: rgb(238, 243, 243);
-  padding: 10px;
+  padding: 10px 45px 10px 10px;
   border: 2px solid #018673;
   border-radius: 12px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .notificacion.show {
-opacity: 1;
+  opacity: 1;
 }
+
+.notificacion .cerrar {
+  position: fixed;
+  top: 1.8rem;
+  right: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #da1e1e;
+  color: #ffffff;
+  border: none;
+  border-radius: 25%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.notificacion .texto {
+  padding-right: 2rem;
+  margin-left: 2rem;
+}
+
+.notificacion .cerrar:hover {
+  background-color: darkred;
+}
+
+.close-button {
+  z-index: 1;
+}
+
 
 @media (max-width: 768px) {
   .texto {

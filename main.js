@@ -1,64 +1,96 @@
-let llaves = {
-    "e": "enter",
-    "i": "imes",
-    "a": "ai",
-    "o": "ober",
-    "u": "ufat" 
-}
+let llaves = {    //creamos un objeto con las llaves proporcionadas en el desafio
+  "e": "enter",
+  "i": "imes",
+  "a": "ai",
+  "o": "ober",
+  "u": "ufat" 
+};
 
 function encriptar(texto) {
-    return texto.replace(/[aeiou]/g, function(match) { //usando expresiones regulares con el modificador global
-      return llaves[match];
-    });
-    }
+  return texto.replace(/[aeiou]/g, function(match) { //usando expresiones regulares con el modificador global
+    return llaves[match];
+  });
+}
+
 function desencriptar(texto) {
-    return texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
-    }
-//https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions
-//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/match
+  return texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+}
 
-//encriptar
-function procesar(){
-    let entrada = document.getElementById("textoOriginal");
-    let salida = document.getElementById("textoEncriptado");
-    let texto = entrada.value;
-    let resultado = encriptar(texto);
-    salida.value = resultado;
-    }
+//Creamos la funcion para encriptar
+function procesar() {
+  let entrada = document.getElementById("textoOriginal");
+  let salida = document.getElementById("textoEncriptado");
+  let texto = entrada.value;
 
-//desencriptar
-function procesarDesencriptar(){
-    let entrada = document.getElementById("textoOriginal");
-    let salida = document.getElementById("textoEncriptado");
-    let texto = entrada.value;
-    let resultado = desencriptar(texto);
-    salida.value = resultado;
-    }
+  if (texto.trim() === "") {
+    mostrarNotificacion("No ingresaste ningún texto");
+    return;
+  }
 
-//copiar
+  let resultado = encriptar(texto);
+  salida.value = resultado;
+  mostrarNotificacion("Texto encriptado correctamente");
+}
+
+//Creamos la funcion para desencriptar
+function procesarDesencriptar() {
+  let entrada = document.getElementById("textoOriginal");
+  let salida = document.getElementById("textoEncriptado");
+  let texto = entrada.value;
+
+  if (texto.trim() === "") {
+    mostrarNotificacion("No ingresaste ningún texto");
+    return;
+  }
+
+  let resultado = desencriptar(texto);
+  salida.value = resultado;
+  mostrarNotificacion("Texto desencriptado correctamente");
+}
+
+//Creamos la funcion para copiar al portapapeles
 function copiarAlPortapapeles() {
   let texto = document.getElementById("textoEncriptado").value;
+
+  if (texto.trim() === "") {
+    return;
+  }
+
   navigator.clipboard.writeText(texto)
     .then(() => {
-      console.log("Texto copiado al portapapeles");
-      document.querySelector('.notificacion').classList.add('show');
-      setTimeout(() => {
-        document.querySelector('.notificacion').classList.remove('show');
-      }, 3000);
+      mostrarNotificacion("Texto copiado al portapapeles");
     })
     .catch((error) => {
       console.error("Error al copiar el texto: ", error);
     });
 }
 
-//Boton restablecer
+//Creamos la funcion procesarBotonCopiar para el boton COPIAR
+function procesarBotonCopiar() {
+  let texto = document.getElementById("textoEncriptado").value.trim();
+  if (!texto) {
+    notificarNadaQueCopiar();
+    return;
+  }
+  copiarAlPortapapeles();
+}
+
+//Creamos la funcion restablecer para limpiar nuestra area de trabajo con el Boton restablecer
 function borrarSegundoTextarea() {
-    document.getElementById("textoEncriptado").value = "";
-    }  
-  
-  //Ocultar Divs
+  let salida = document.getElementById("textoEncriptado");
+  let texto = salida.value.trim();
+
+  if (texto === "") {
+    mostrarNotificacion("No hay nada que limpiar");
+    return;
+  }
+
+  salida.value = "";
+  mostrarNotificacion("Espacio limpiado");
+} 
+//Ocultar Divs dinamicamente si hay o no hay ningun texto en nuestra area de trabajo
 function mostrarOcultarDivs() {
-    setTimeout(() => {
+  setTimeout(() => {
     let texto = document.getElementById("textoOriginal").value;
     let divPasivo = document.getElementById("pasivo");
     let divActivo = document.getElementById("activo");
@@ -74,5 +106,26 @@ function mostrarOcultarDivs() {
       // Asignar el valor del primer textarea al segundo
       textoEncriptado.value = texto;
     }
-    }, 0); // El tiempo de espera es 0 milisegundos
+  }, 0); // El tiempo de espera es 0 milisegundos
 }
+
+//Creamos la funcion notificacion y creamos la variable notificacion para asignarle una clase y trabajar en CSS
+function mostrarNotificacion(mensajeTexto) {
+  mensaje.innerText = mensajeTexto; //se cambia el texto del párrafo por el que se quiere mostrar
+  notificacion.classList.add("show");
+  setTimeout(function() {
+    notificacion.classList.remove("show");
+  }, 3000);
+}
+
+//Cerrar notificaciones
+const notificacion = document.getElementById("notificacion");//usamos el ID del div de la notificacion
+const mensaje = document.querySelector(".mensaje"); //usamos su clase
+const cerrar = document.getElementById("cerrar");//usamos el ID del boton cerrar
+
+cerrar.addEventListener("click", function(event) {
+  event.preventDefault();
+  notificacion.classList.remove("show");//usamos de nuevo la clase en el evento click
+});
+
+

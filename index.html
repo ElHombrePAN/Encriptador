@@ -8,7 +8,7 @@
     <meta name="description" content="Un encriptador sencillo como parte del desafio del programa Oracle One con Alura">
     <link rel="shortcut icon" href="./assets/c.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <header class="header">
@@ -36,13 +36,14 @@
                 <textarea class="textarea-modificada" disabled id="textoEncriptado"></textarea>
                 <br>
                 <label class="label" for="copiar">Usa el boton para copiar tu texto</label>
-                <input class="boton copiar" type="button" name="copiar" value="copiar" id="copiar" onclick="copiarAlPortapapeles()"></button>
+                <input class="boton copiar" type="button" name="copiar" value="copiar" id="copiar" onclick="procesarBotonCopiar()">
             </form>
         </article>
+        <div class="notificacion" id="notificacion">
+            <span class="mensaje"></span>
+            <button class="cerrar" id="cerrar">X</button>
+          </div>
     </section>
 <script src="main.js"></script>
 </body>
-<div class="notificacion" data-duration="3000">
-    Texto copiado
-  </div>  
 </html>     
