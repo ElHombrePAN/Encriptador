@@ -135,7 +135,7 @@ html:hover{
   right: 2rem;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #da1e1e;
+  background-color: #a10f0f;
   color: #ffffff;
   border: none;
   border-radius: 25%;
@@ -151,12 +151,34 @@ html:hover{
 }
 
 .notificacion .cerrar:hover {
-  background-color: darkred;
+  background-color: rgb(75, 13, 13);
 }
 
 .close-button {
   z-index: 1;
 }
+
+.notificacion progress {
+  /* Le damos un ancho del 100% del contenedor */
+  width: 100%;
+  /* Le quitamos el borde por defecto */
+  border: none;
+  /* Le damos un color de fondo gris claro */
+  background-color: #d3d3d3;
+}
+
+/* Seleccionamos la parte interna de la barra de progreso */
+.notificacion progress::-webkit-progress-value {
+  /* Le damos un color verde */
+  background-color: #018673;
+}
+
+/* Seleccionamos la parte externa de la barra de progreso */
+.notificacion progress::-webkit-progress-bar {
+  /* Le damos un color gris oscuro */
+  background-color: #1a2e35;
+}
+
 
 
 @media (max-width: 768px) {
