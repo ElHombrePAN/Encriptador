@@ -42,7 +42,7 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Modo espejo para las cajas de texto  |
 |  ✅  |  Textarea dinamica (Solo aparece si detecta texto)  |
 |  ✅  |  Agregado el boton restablecer area de trabajo, evita recargar la pagina  |  
-|  ✅  |  Agregado boton para copiar texto  |
+|  ✅  |  Agregado boton para pegar texto  |
 |  ✅  |  Agregada notificaciones tipo toast  |  
 
 # Funciones en desarrollo  
@@ -52,6 +52,7 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ❓  |  Modo responsivo  |
 |  ❓ |  Mejorar interactividad  |
 |  ❓  |  Modo oscuro-claro  |
+|  ❓  |  Backgroud dinamino  |
 
 
 
