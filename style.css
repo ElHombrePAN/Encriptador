@@ -113,7 +113,7 @@ html{
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #1a2e35;
+  background-color: #171e20;
   color: rgb(238, 243, 243);
   padding: 14px 45px 10px 10px;
   border: 2px solid #018673;
@@ -131,8 +131,8 @@ html{
   position: fixed;
   top: 1.8rem;
   right: 2rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
   background-color: #a10f0f;
   color: #ffffff;
   border: none;
