@@ -44,6 +44,9 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Agregado el boton restablecer area de trabajo, evita recargar la pagina  |  
 |  ✅  |  Agregado boton para pegar texto  |
 |  ✅  |  Agregada notificaciones tipo toast  |  
+|  ✅  |  Agregado un contador de palabras*   |  
+*Solo contara la palabra si contiene por lo menos una letra de la llaves,   
+
 
 # Funciones en desarrollo  
 
