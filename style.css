@@ -245,7 +245,7 @@ html{
 
 @media (max-width: 480px) {
   .header{
-    margin: 16% 0 4% 10%;
+    margin: 14% 0 4% 10%;
   }
   
   .label{
@@ -279,9 +279,9 @@ html{
 
   .boton{
     text-align: center;
-    font-size: 0.6rem;
-    width: 20%;
-    height: 4vh;
+    font-size: 0.8rem;
+    width: 40%;
+    height: 6vh;
   }
 
   .mensaje-info{
@@ -302,11 +302,15 @@ html{
     right: 0rem;
     text-align: center;
     width: 40%;
-    height: 9%;
+    height: 8%;
     font-size: 0.6rem;
   }
 
   .notificacion .cerrar {
+    display: none;
+  }
+
+  .notificacion progress {
     display: none;
   }
 }
