@@ -303,10 +303,14 @@ html{
     text-align: center;
     width: 30%;
     height: 8%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .notificacion .cerrar {
     display: none;
   }
+
+  .notificacion progress {
+    display: none;
+  }  
 }
