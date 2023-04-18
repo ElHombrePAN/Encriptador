@@ -45,6 +45,7 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Agregado boton para pegar texto  |
 |  ✅  |  Agregada notificaciones tipo toast  |  
 |  ✅  |  Agregado un contador de palabras*   |  
+
 *Solo contara la palabra si contiene por lo menos una letra de la llaves,   
 
 
