@@ -245,7 +245,7 @@ html{
 
 @media (max-width: 480px) {
   .header{
-    margin: 4% 0 4% 10%;
+    margin: 16% 0 4% 10%;
   }
   
   .label{
@@ -279,7 +279,7 @@ html{
 
   .boton{
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     width: 20%;
     height: 4vh;
   }
@@ -301,16 +301,12 @@ html{
     top: 0rem;
     right: 0rem;
     text-align: center;
-    width: 24%;
-    height: 10%;
+    width: 40%;
+    height: 9%;
     font-size: 0.6rem;
   }
 
   .notificacion .cerrar {
     display: none;
   }
-
-  .notificacion progress {
-    display: none;
-  }  
 }
