@@ -18,7 +18,7 @@ html{
 .header{
   color: rgb(238, 243, 243);
   align-items: center;
-  margin: 20px;
+  margin: 2% 0 2% 6%;
 }
 
 .alura{
@@ -35,8 +35,8 @@ html{
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
-  margin-top: 20px;
+  height: 60vh;
+  justify-content: center;
 }
 
 .article-uno{
@@ -55,9 +55,9 @@ html{
 
 .label{
   color: #e2e2e0;
-  font-size: 17px;
+  font-size: 1rem;
   display: block;
-  padding: 10px
+  padding: .9%;
 }
 
 .parrafo, .mensaje-info{
@@ -91,12 +91,14 @@ html{
 
 .boton{
   text-align: center;
+  font-size: medium;
+  width: 20%;
+  height: 7vh;
   background-color: #018673;
   color: rgb(238, 243, 243);
   border: 2px solid #1a2e35;
   font-size: 16px;
   border-radius: 10px;
-  padding: 10px 40px 10px 40px;
 }
 
 .copiar {
@@ -114,9 +116,10 @@ html{
   width: 24%;
   height: 10%;
   font-size: smaller;
+  text-align: center;
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 4%;
   background-color: #171e20;
   color: rgb(238, 243, 243);
   padding: 14px 10px 10px 10px;
@@ -134,15 +137,16 @@ html{
 .notificacion .cerrar {
   position: fixed;
   top: 1.8rem;
-  right: 1.9rem;
+  right: 5%;
   width: 1.4rem;
   height: 1.4rem;
-  background-color: #a10f0f;
+  background-color: #1a1d1f;
   color: #ffffff;
-  border: none;
+  border: 2px solid #018673;
   border-radius: 25%;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.3rem;
   text-align: center;
   cursor: pointer;
 }
@@ -153,7 +157,8 @@ html{
 }
 
 .notificacion .cerrar:hover {
-  background-color: rgb(245, 23, 23);
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .close-button {
@@ -183,39 +188,125 @@ html{
 }
 
 @media (max-width: 768px) {
-  .texto {
-    flex-basis: 100%;
+  .principal{
+    display: block;
+    width: 100%;
   }
 
-  .texto-codificado {
-    flex-basis: 100%;
+  .header{
+    margin: 4% 0 4% 10%;
+  }
+  
+  .article-uno{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .article-dos,.article-tres{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .article-tres{
+    display: none;
   }
 
-  .informacion {
-    flex-basis: 100%;
+  .textarea-original, .textarea-modificada{
+    width: 80%;
+    height: 250px;
   }
 
-  /* Ajuste del tamaño de fuente para los botones */
-  .texto .boton {
-    font-size: 14px;
+  .boton{
+    text-align: center;
+    font-size: medium;
+    width: 20%;
+    height: 4vh;
+  }
+
+  .imagen-b{
+    width: 50%;
+  }
+
+  .notificacion {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    text-align: center;
+    width: 40%;
+    height: 6%;
+    font-size: 0.8rem;
+  }
+
+  .notificacion .cerrar {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .texto {
-    flex-basis: 100%;
+  .header{
+    margin: 4% 0 4% 10%;
+  }
+  
+  .label{
+    font-size: smaller;
   }
 
-  .texto-codificado {
-    flex-basis: 100%;
+  .article-uno{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .article-dos,.article-tres{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .article-tres{
+    display: none;
   }
 
-  .informacion {
-    flex-basis: 100%;
+  .textarea-original, .textarea-modificada{
+    width: 80%;
+    height: 150px;
+    font-size: small;
   }
 
-  /* Ajuste del tamaño de fuente para los botones */
-  .texto .boton {
-    font-size: 12px;
+  .textarea-original, .textarea-modificada::placeholder{
+    font-size: small;
+  }
+
+  .boton{
+    text-align: center;
+    font-size: 0.7rem;
+    width: 20%;
+    height: 4vh;
+  }
+
+  .mensaje-info{
+    font-size: 1rem;
+  }
+
+  .parrafo{
+    font-size: 0.8rem;
+  }
+
+  .imagen-b{
+    width: 40%;
+  }
+
+  .notificacion {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    text-align: center;
+    width: 30%;
+    height: 8%;
+    font-size: 0.8rem;
+  }
+
+  .notificacion .cerrar {
+    display: none;
   }
 }
