@@ -1,4 +1,5 @@
-let llaves = {    //creamos un objeto con las llaves proporcionadas en el desafio
+//creamos un objeto con las llaves proporcionadas en el desafio
+let llaves = {
   "e": "enter",
   "i": "imes",
   "a": "ai",
@@ -6,17 +7,45 @@ let llaves = {    //creamos un objeto con las llaves proporcionadas en el desafi
   "u": "ufat" 
 };
 
+//Creamos la funcion encriptar usando expresiones regulares con el modificador global
 function encriptar(texto) {
-  return texto.replace(/[aeiou]/g, function(match) { //usando expresiones regulares con el modificador global
+  return texto.replace(/[aeiou]/g, function(match) {
     return llaves[match];
   });
 }
 
+//Creamos la funcion para desencriptar
 function desencriptar(texto) {
   return texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
 }
 
-//Creamos la funcion para encriptar
+//Creamos otra funcion para contar cuantas palabras encripto
+function contarPalabras(texto) {
+  let palabras = texto.trim().split(/\s+/);
+  let palabrasConLetrasEnLlaves = 0;
+
+  for (let palabra of palabras) {
+    if (contieneLetraEnLlaves(palabra)) {
+      palabrasConLetrasEnLlaves++;
+    }
+  }
+
+  return palabrasConLetrasEnLlaves;
+}
+
+let contadorPalabras = 0;; 
+
+//Adicional crearemos otra funcion para validar que la palabra contenga una letra de la llave
+function contieneLetraEnLlaves(palabra) {
+  for (let letra in llaves) {
+    if (palabra.includes(letra)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+//Creamos la funcion para encriptar y la asignamos al boton con onclick
 function procesar() {
   let entrada = document.getElementById("textoOriginal");
   let salida = document.getElementById("textoEncriptado");
@@ -28,11 +57,13 @@ function procesar() {
   }
 
   let resultado = encriptar(texto);
+  contadorPalabras += contarPalabras(texto);
+  document.getElementById("contadorPalabras").innerText = "Palabras encriptadas: " + contadorPalabras;
   salida.value = resultado;
   mostrarNotificacion("Texto encriptado correctamente");
 }
 
-//Creamos la funcion para desencriptar
+//Creamos la funcion para desencriptar y la asignamos al boton con onclick
 function procesarDesencriptar() {
   let entrada = document.getElementById("textoOriginal");
   let salida = document.getElementById("textoEncriptado");
@@ -74,8 +105,8 @@ function copiarAlPortapapeles() {
       console.error("Error al copiar el texto: ", error);
     });
 }
-//creando el boton pegar aprendiendo el evento click
-//Obtenemos el botón de pegar usando el método getElementById
+
+//creando el boton pegar aprendiendo el evento click Obtenemos el botón de pegar usando el método getElementById
 const pegar = document.getElementById("pegar");
 
 //Asignamos un evento click al botón de pegar
@@ -164,7 +195,7 @@ function mostrarNotificacion(mensajeTexto) {
   }, 10);
 }
 
-//Cerrar notificaciones
+//Cerrar notificaciones usadas en las notificaciones anteriores
 const notificacion = document.getElementById("notificacion");//usamos el ID del div de la notificacion
 const mensaje = document.querySelector(".mensaje"); //usamos su clase
 const cerrar = document.getElementById("cerrar");//usamos el ID del boton cerrar
