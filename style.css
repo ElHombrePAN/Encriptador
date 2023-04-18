@@ -49,6 +49,10 @@ html{
   text-align: center;
 }
 
+.article-tres{
+  display: none;
+}
+
 .label{
   color: #e2e2e0;
   font-size: 17px;
@@ -115,7 +119,7 @@ html{
   right: 20px;
   background-color: #171e20;
   color: rgb(238, 243, 243);
-  padding: 14px 45px 10px 10px;
+  padding: 14px 10px 10px 10px;
   border: 2px solid #018673;
   border-radius: 12px;
   opacity: 0;
@@ -130,7 +134,7 @@ html{
 .notificacion .cerrar {
   position: fixed;
   top: 1.8rem;
-  right: 2rem;
+  right: 1.9rem;
   width: 1.4rem;
   height: 1.4rem;
   background-color: #a10f0f;

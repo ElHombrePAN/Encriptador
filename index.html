@@ -8,7 +8,9 @@
     <meta name="description" content="Un encriptador sencillo como parte del desafio del programa Oracle One con Alura">
     <link rel="shortcut icon" href="./assets/c.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <header class="header">
@@ -33,7 +35,7 @@
             <h3 class="mensaje-info">Ningun mensaje fue encontrado</h3>
             <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
         </article>
-        <article class="article-tres" id="activo" style="display:none;">
+        <article class="article-tres" id="activo">
             <form>
                 <textarea class="textarea-modificada" disabled id="textoEncriptado"></textarea>
                 <br>
@@ -45,7 +47,7 @@
             <span class="mensaje"></span>
             <button class="cerrar" id="cerrar">X</button>
             <br><progress></progress>
-          </div>
+        </div>
     </section>
 <script src="main.js"></script>
 </body>
