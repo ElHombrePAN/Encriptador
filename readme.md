@@ -1,10 +1,10 @@
-# Encriptador
+# Encriptador  
+Para probar el encriptador ingresa.  
+https://elhombrepan.github.io/Encriptador/ 
+![Vistaprevia](./assets/ProyectoEA.png) 
 Para el programa ORACLE ONE NEXT EDUCATION  
 https://www.oracle.com/mx/education/oracle-next-education/
 
-# Probar el encriptador
-https://elhombrepan.github.io/Encriptador/ 
-![Vistaprevia](./assets/encriptador.png)  
 
 # Caracterisiticas solicitadas
 
@@ -44,16 +44,17 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Agregado el boton restablecer area de trabajo, evita recargar la pagina  |  
 |  ✅  |  Agregado boton para pegar texto  |
 |  ✅  |  Agregada notificaciones tipo toast  |  
-|  ✅  |  Agregado un contador de palabras encriptadas*   |  
+|  ✅  |  Agregado un contador de palabras encriptadas*   |
+|  ✅  |  Agregado modo responsivo**   |  
 
-*Solo contara la palabra si contiene por lo menos una letra de la llaves,   
+*Solo contara la palabra si contiene por lo menos una letra de la llaves,  
+**Probado para su version en vertical   
 
 
 # Funciones en desarrollo  
 
 |  Estado  |  Funcion  |
 |  -------------  |  -------------  |
-|  ❓  |  Modo responsivo  |
 |  ❓ |  Mejorar interactividad  |
 |  ❓  |  Modo oscuro-claro  |
 |  ❓  |  Backgroud dinamino  |
