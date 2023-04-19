@@ -310,6 +310,9 @@ html{
 }
 
 @media (max-height: 480px) and (orientation: landscape){
+  .header{
+    margin: 1% 0 3% 6%;
+  }
 
   .article-uno{
     width: 50%;
@@ -322,7 +325,7 @@ html{
   }
 
   .textarea-original, .textarea-modificada{
-    height: 80px;
+    height: 100px;
     font-size: 0.8rem;
   }
 
@@ -340,15 +343,18 @@ html{
 
   .label{
     font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
   }
 
   .imagen-b{
     width: 50%;
+    height: 50%;
   }
 
   .boton{
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 40%;
     height: 8vh;
   }
