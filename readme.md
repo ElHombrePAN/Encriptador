@@ -1,7 +1,7 @@
 # Encriptador  
 Para probar el encriptador ingresa.  
 https://elhombrepan.github.io/Encriptador/ 
-![Vistaprevia](./assets/ProyectoEA.png) 
+![Vistaprevia](./assets/fondoG.png) 
 Para el programa ORACLE ONE NEXT EDUCATION  
 https://www.oracle.com/mx/education/oracle-next-education/
 
