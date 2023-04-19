@@ -52,7 +52,7 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Agregado modo responsivo**   |  
 
 *Solo contara la palabra si contiene por lo menos una letra de la llaves,  
-**Probado para su version en vertical   
+**Probado para su version en vertical y horizontal  
 
 
 # ❓Funciones en desarrollo  
