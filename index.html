@@ -19,6 +19,10 @@
 </header>
 <body>
     <section class="principal">
+        <div class="lateral">
+            <h2 class="lateral-titulo">Historial</h2>
+            <div id="listaSesiones"></div>
+        </div>
         <article class="article-uno">
             <form onreset="mostrarOcultarDivs()">
                 <textarea class="textarea-original" placeholder="Ingrese el texto que deseas encriptar aquí " name="texto" minlength="1" autofocus  id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
@@ -28,6 +32,8 @@
                 <input class="boton" type="button" value="Desencriptar" id="desencriptar" name="Desencriptar" onclick="procesarDesencriptar()">
                 <input class="boton" type="button" value="Pegar" id="pegar">
                 <input class="boton" type="reset" value="Limpiar" onclick="borrarSegundoTextarea()">
+                <input class="boton" type="button" value="Guardar" id="guardar">
+                <input class="boton" type="button" value="Historial" id="historial">
             </form>
         </article>
         <article class="article-dos" id="pasivo">
@@ -46,7 +52,7 @@
         <div class="notificacion" id="notificacion">
             <span class="mensaje"></span>
             <button class="cerrar" id="cerrar">X</button>
-            <br><progress></progress>
+            <br><progress></progress></div>
         </section>   
 <script src="main.js"></script>
 </body>
