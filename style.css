@@ -109,27 +109,6 @@ html{
   padding: 10px;
 }
 
-.textarea-original::-webkit-scrollbar{
-  width: 10px;
-  /*background-color: #000000;*/
-}
-
-.textarea-original::-webkit-scrollbar-thumb{
-  background-color: #018673;  
-  border-radius: 12px;
-}
-
-.textarea-modificada::-webkit-scrollbar{
-  width: 10px;
-  /*background-color: #000000;*/
-}
-
-.textarea-modificada::-webkit-scrollbar-thumb{
-  background-color: #018673;  
-  border-radius: 12px;
-}
-
-
 .textarea-original{
   background-color: #141414;
   color: #e2e2e0;
