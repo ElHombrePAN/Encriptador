@@ -140,16 +140,7 @@ function borrarSegundoTextarea() {
 
   salida.value = "";
   mostrarNotificacion("Limpieza realizada");
-
-  // Comprobamos si se ha seleccionado una sesion
-  //if (listaSesiones.selectedIndex !== -1) {
-  // Si se ha seleccionado una sesion, eliminamos la lista de sesiones, desactivamos la sesion activa y limpiamos el primer textarea
-  //listaSesiones.innerHTML = "";
-  sesionActiva = false;
-  document.getElementById("textoOriginal").value = "";
-  //}
-}
-
+} 
 //Ocultar Divs dinamicamente si hay o no hay ningun texto en nuestra area de trabajo
 function mostrarOcultarDivs() {
   setTimeout(() => {
@@ -165,15 +156,8 @@ function mostrarOcultarDivs() {
       // Si el primer textarea tiene algún valor, ocultar el div pasivo y mostrar el div activo
       divPasivo.style.display = "none";
       divActivo.style.display = "block";
-      // Verificar el valor de la variable global y asignar el valor al segundo textarea según corresponda
-      if (sesionActiva) {
-        // Si hay una sesión activa, asignar el valor encriptado al segundo textarea
-        document.getElementById("textoEncriptado").value =
-          sesion.textoEncriptado;
-      } else {
-        // Si no hay una sesión activa, asignar el mismo valor que el primero al segundo textarea
-        document.getElementById("textoEncriptado").value = texto;
-      }
+      // Asignar el valor del primer textarea al segundo
+      textoEncriptado.value = texto;
     }
   }, 0); // El tiempo de espera es 0 milisegundos
 }
@@ -224,5 +208,4 @@ cerrar.addEventListener("click", function(event) {
   //Detenemos el intervalo si existe
   clearInterval(intervalId);
 });
-
 
