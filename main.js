@@ -158,12 +158,12 @@ function borrarSegundoTextarea() {
   mostrarNotificacion("Limpieza realizada");
 
   // Comprobamos si se ha seleccionado una sesion
-  if (listaSesiones.selectedIndex !== -1) {
+  //if (listaSesiones.selectedIndex !== -1) {
   // Si se ha seleccionado una sesion, eliminamos la lista de sesiones, desactivamos la sesion activa y limpiamos el primer textarea
   //listaSesiones.innerHTML = "";
   sesionActiva = false;
   document.getElementById("textoOriginal").value = "";
-  }
+  //}
 }
 
 //Ocultar Divs dinamicamente si hay o no hay ningun texto en nuestra area de trabajo
