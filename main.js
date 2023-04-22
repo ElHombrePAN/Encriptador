@@ -184,7 +184,8 @@ function mostrarOcultarDivs() {
       // Verificar el valor de la variable global y asignar el valor al segundo textarea según corresponda
       if (sesionActiva) {
         // Si hay una sesión activa, asignar el valor encriptado al segundo textarea
-        document.getElementById("textoEncriptado").value = sesion.textoEncriptado;
+        document.getElementById("textoEncriptado").value =
+          sesion.textoEncriptado;
       } else {
         // Si no hay una sesión activa, asignar el mismo valor que el primero al segundo textarea
         document.getElementById("textoEncriptado").value = texto;
