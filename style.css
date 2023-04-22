@@ -50,17 +50,7 @@ html{
   background-color: #141414;
   color: #d3d3d3;
   overflow-y: auto; /* Mostrar barra de scroll vertical si el contenido supera la altura */
-  max-height: 27.5rem; /* Altura máxima para que solo quepan tres objetos sesiones */
-  border-radius: 12px;
-}
-
-.lateral::-webkit-scrollbar{
-  width: 10px;
-  /*background-color: #000000;*/
-}
-
-.lateral::-webkit-scrollbar-thumb{
-  background-color: #018673;  
+  max-height: 30rem; /* Altura máxima para que solo quepan tres objetos sesiones */
   border-radius: 12px;
 }
 
@@ -265,8 +255,6 @@ html{
   /* Le damos un color gris oscuro */
   background-color: #1a2e35;
 }
-
-
 
 @media (max-width: 950px){
   .principal{
