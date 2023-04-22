@@ -224,3 +224,5 @@ cerrar.addEventListener("click", function(event) {
   //Detenemos el intervalo si existe
   clearInterval(intervalId);
 });
+
+
