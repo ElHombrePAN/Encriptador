@@ -2,10 +2,16 @@ html{
   box-sizing: border-box;
   background-color: #152c27;
   background-image: url(./assets/SVGAnimado.svg);
-  background-size: cover; /* La imagen cubrirá todo el área del elemento */
+  background-size: auto; /* La imagen cubrirá todo el área del elemento */
   background-position: center;/* La imagen se centrará en el elemento */
   width: 100%;
   height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 *, *:before, *:after {
@@ -18,7 +24,7 @@ html{
 .header{
   color: rgb(238, 243, 243);
   align-items: center;
-  margin: 2% 0 2% 6%;
+  margin: 2% auto;
 }
 
 .alura{
@@ -27,25 +33,64 @@ html{
 
 .imagen-b{
   object-fit: contain;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
+  margin-bottom: 1rem;
+}
+
+.main{
+  flex-grow: 1;
 }
 
 .principal{
   display: inline-flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
   height: 60vh;
-  justify-content: center;
+}
+
+.lateral{
+  display: block;
+  visibility: hidden;
+  width: 10%;
+  height: auto;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #141414;
+  color: #d3d3d3;
+  overflow-y: auto; /* Mostrar barra de scroll vertical si el contenido supera la altura */
+  max-height: 27.5rem; /* Altura máxima para que solo quepan tres objetos sesiones */
+  border-radius: 12px;
+}
+
+.lateral::-webkit-scrollbar{
+  width: 10px;
+  /*background-color: #000000;*/
+}
+
+.lateral::-webkit-scrollbar-thumb{
+  background-color: #018673;  
+  border-radius: 12px;
+}
+
+.lateral-titulo{
+  font-size: 1.2rem;
+  text-align: center;
+  border: solid 2px rgb(43, 43, 43);
+  border-radius: 12px 12px 0 0;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .article-uno{
-  width: 60%;
+  width: 50%;
   text-align: center;
 }
 
 .article-dos,.article-tres{
-  width: 40%;
+  width: 30%;
   text-align: center;
 }
 
@@ -67,13 +112,34 @@ html{
 }
 
 .textarea-original, .textarea-modificada{
-  width: 80%;
-  height: 350px;
+  width: 100%;
+  height: 20rem;
   resize: none;
   font-size: 20px;
   border-radius: 12px;
   padding: 10px;
 }
+
+.textarea-original::-webkit-scrollbar{
+  width: 10px;
+  /*background-color: #000000;*/
+}
+
+.textarea-original::-webkit-scrollbar-thumb{
+  background-color: #018673;  
+  border-radius: 12px;
+}
+
+.textarea-modificada::-webkit-scrollbar{
+  width: 10px;
+  /*background-color: #000000;*/
+}
+
+.textarea-modificada::-webkit-scrollbar-thumb{
+  background-color: #018673;  
+  border-radius: 12px;
+}
+
 
 .textarea-original{
   background-color: #141414;
@@ -92,18 +158,17 @@ html{
 .boton{
   text-align: center;
   font-size: 1rem;
-  width: 20%;
+  width: 14rem;
   height: 6vh;
   background-color: #018673;
   color: rgb(238, 243, 243);
   border: 2px solid #1a2e35;
   font-size: 16px;
   border-radius: 10px;
+  margin: 2px auto;
 }
 
 .copiar {
-  width: 80%;
-  margin: 5px auto;
   display: block;
 }
 
@@ -125,7 +190,37 @@ html{
   align-items: center;
   justify-content: center;
   margin-top: 0.5rem;
+}
 
+.sesion{
+  overflow-wrap: break-word;
+  font-size: 0.8rem;
+  border: solid 2px rgb(43, 43, 43);
+  text-align: center;
+  margin-bottom: .8rem;
+  padding: 0.7rem;
+}
+
+.sesion:hover{
+  border: solid 2px rgb(33, 107, 85);
+  background-color: #363434;
+}
+
+.eliminar{
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+  height: 1.8rem;
+  background-color: #1a1d1f;
+  color: #ffffff;
+  border: 2px solid #018673;
+  margin-top: 0.5rem;  
+  border-radius: 12px;
+}
+
+.eliminar:hover{
+  background-color: #0c181d;
+  border: 2px solid #07d6b7;
 }
 
 .notificacion {
@@ -203,6 +298,33 @@ html{
   background-color: #1a2e35;
 }
 
+.palabras-e{
+  margin-top: 1rem;
+  color: #d3d3d3;
+}
+
+.footer{
+  background-color: #000000;
+  color: #ebebeb;
+  margin: 0;
+  border: none;
+}
+
+
+.autor{
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.autor-d{
+  font-size: .8rem;
+  text-align: center;
+  margin: 1px;
+}
+
+
+
 @media (max-width: 950px){
   .principal{
     display: block;
@@ -241,7 +363,7 @@ html{
   }
 
   .imagen-b{
-    width: 40%;
+    width: 300%;
   }
 
   .notificacion {
@@ -450,3 +572,5 @@ html{
   }
   
 }
+
+
