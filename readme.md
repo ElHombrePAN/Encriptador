@@ -1,7 +1,7 @@
 # 💾Encriptador Version Beta 2.0 
 Para probar el encriptador ingresa. Todavia es un trabajo en progreso...  
 https://elhombrepan.github.io/Encriptador/ 
-![Vistaprevia](./assets/fondoG.png) 
+![Vistaprevia](./assets/vistaprevia.png) 
 Para el programa ORACLE ONE NEXT EDUCATION    
 https://www.oracle.com/mx/education/oracle-next-education/
 <div align="center">
