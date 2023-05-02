@@ -251,7 +251,7 @@ document.getElementById("historial").addEventListener("click", function () {
   } else {
     sesiones.forEach((sesion) => {
       let sesionDiv = document.createElement("div");
-      sesionDiv.innerHTML = `ID: ${sesion.id}<br>${sesion.nombre}<br>`; //usando template strings 
+      sesionDiv.innerHTML = `ID: ${sesion.id}<br>${sesion.nombre}<br>`; //usando template strings
       sesionDiv.className = "sesion";
       //Agregamos un botón de eliminar al lado del nombre de la sesión
       let botonEliminar = document.createElement("button");
@@ -280,7 +280,7 @@ document.getElementById("historial").addEventListener("click", function () {
       });
       //Solo tenemos una vez esta línea, dentro del forEach
       listaSesiones.appendChild(sesionDiv);
-      mostrarOcultarDivs()
+      mostrarOcultarDivs();
     });
   }
 });
