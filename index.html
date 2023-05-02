@@ -22,12 +22,14 @@
   <main class="main">
     <section class="principal">
       <div class="lateral">
-        <h2 class="lateral-titulo">Historial</h2>
-        <div id="listaSesiones"></div>
+        <div class="lateral-titulo">
+          <h2>Historial</h2>
+        </div>
+        <div id="listaSesiones" class="scrollmenu"></div>
       </div>
       <article class="article-uno">
         <form onreset="mostrarOcultarDivs()">
-          <textarea class="textarea-original" placeholder="Ingrese el texto que deseas encriptar aquí " name="texto"
+          <textarea class="textarea-original" placeholder="Ingrese el texto que deseas encriptar aquí... " name="texto"
             minlength="1" autofocus id="textoOriginal" oninput="mostrarOcultarDivs()"></textarea>
           <br>
           <label class="label" for="encriptar">Solo encripta letras minúsculas y sin acento</label>
