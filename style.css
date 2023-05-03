@@ -91,7 +91,7 @@ body {
   text-align: center;
 }
 
-.h2-historial{
+.h2-historial {
   line-height: 4rem;
 }
 
@@ -350,8 +350,8 @@ body {
   color: #018673;
 }
 
-@media (max-width: 1115px){
-  .imagen-b{
+@media (max-width: 1115px) {
+  .imagen-b {
     width: 80%;
     height: 60%;
   }
@@ -361,30 +361,108 @@ body {
   }
 }
 
-@media (max-width: 950px){
-  .imagen-b{
-    width: 60%;
-    height: 60%;
+@media (max-width: 950px) {
+  .header {
+    margin: 1rem auto;
+  }
+
+  .principal {
+    height: 100%;
+  }
+
+  .article-uno {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    order: 1;
+  }
+
+  .article-dos,
+  .article-tres {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .article-dos {
+    order: 2;
+    height: 20rem;
+  }
+
+  .article-tres {
+    display: none;
+    order: 3;
+  }
+
+  .lateral {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 6.1rem;
+    order: 4;
+    margin-bottom: 2rem;
+  }
+
+  .lateral-titulo {
+    border-radius: 12px 0 0 12px;
+    height: 5.8rem;
+    width: 10rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .h2-historial {
+    margin-top: 1rem;
+  }
+
+  .scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .sesion {
+    display: inline-block;
+  }
+
+  .textarea-original,
+  .textarea-modificada {
+    width: 90%;
+    height: 200px;
   }
 
   .boton {
-    width: 9rem;
-  }
-
-  .lateral-titulo{
-    width: 100%;
-    height: 4rem;
-    padding: 0;
-    margin: 0 auto;
     text-align: center;
-  }
-  
-  .h2-historial{
     font-size: 1rem;
-    line-height: 4rem;
-    
+    width: 30%;
+    height: 6vh;
   }
 
+  .imagen-b {
+    width: 40%;
+    margin: 0;
+  }
+
+  .mensaje-info {
+    margin: 0;
+  }
+
+  .parrafo {
+    margin: 0;
+  }
+
+  .notificacion {
+    position: fixed;
+    top: 0.5rem;
+    right: 14rem;
+    text-align: center;
+    width: 40%;
+    height: 6%;
+    font-size: 0.8rem;
+  }
+
+  .notificacion .cerrar {
+    display: none;
+  }
 }
 
 /*mediaq basadas para IPAD Air*/
@@ -491,7 +569,7 @@ body {
     height: 15.9%;
   }
 
-  .lateral-titulo{
+  .lateral-titulo {
     width: 10rem;
     margin: 0;
     padding: 0;
@@ -510,38 +588,42 @@ body {
   .article-uno {
     order: 1;
     width: 100%;
+    height: 30vh;
     margin-bottom: 2rem;
   }
 
   .article-dos,
   .article-tres {
     width: 100%;
+    height: 30vh;
     margin-bottom: 1rem;
   }
 
-  .article-dos{
+  .article-dos {
     order: 2;
   }
 
-  .article-tres{
+  .article-tres {
     order: 3;
   }
 
-  .lateral{
+  .lateral {
+    width: 90%;
     order: 4;
-    height: 18%;
+    height: auto;
   }
 
   .lateral-titulo {
     border-radius: 12px 0 0 12px;
-    height: 1rem;
+    height: auto;
     width: 10rem;
     margin: 0;
     padding: 0;
   }
 
-  .h2-historial{
-    line-height: 3rem;
+  .h2-historial {
+    font-size: 1rem;
+    line-height: 4.4rem;
   }
 
   .textarea-original,
@@ -594,38 +676,45 @@ body {
   }
 }
 
-@media (max-width: 420px) and (orientation: portrait) {
+@media (max-width: 375px) and (orientation: portrait) {
   .header {
     margin: 4% auto;
   }
 
+  .principal {
+    height: auto;
+  }
+
   .label {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .article-uno {
     order: 1;
     width: 100%;
-    margin-bottom: 2rem;
+    height: 30vh;
+    margin-bottom: 3rem;
   }
 
   .article-dos,
   .article-tres {
     width: 100%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+    height: 30vh;
   }
 
-  .article-dos{
+  .article-dos {
     order: 2;
   }
 
-  .article-tres{
+  .article-tres {
     order: 3;
   }
 
-  .lateral{
+  .lateral {
     order: 4;
     height: 18%;
+    height: 20vh;
   }
 
   .textarea-original,
@@ -647,7 +736,7 @@ body {
     height: 4vh;
   }
 
-  .palabras-e{
+  .palabras-e {
     font-size: 1rem;
   }
 
@@ -682,28 +771,31 @@ body {
     display: none;
   }
 
-  .lateral{
+  .lateral {
     width: 90%;
     height: 4.55rem;
+    margin: 0;
+    padding: 0;
+    
   }
 
-  .lateral-titulo{
-    height: 4.3rem;
+  .lateral-titulo {
+    height: 4.2rem;
   }
 
-  .h2-historial{
-    font-size: .9rem;
-    margin: 10px 0 0 0;
+  .h2-historial {
+    font-size: 1rem;
+    line-height: 1.8rem;
   }
 
-  .sesion{
-    font-size: .7rem;
-    padding: .2rem;
+  .sesion {
+    font-size: 0.7rem;
+    padding: 0.2rem;
   }
 
   .eliminar {
     text-align: center;
-    font-size: .6rem;
+    font-size: 0.6rem;
     width: 100%;
     height: 1.4rem;
     background-color: #1a1d1f;
@@ -712,7 +804,7 @@ body {
     margin-top: 0.5rem;
     border-radius: 6px;
   }
-  
+
   .eliminar:hover {
     background-color: #0c181d;
     border: 2px solid #07d6b7;
@@ -724,19 +816,19 @@ body {
     margin: 0;
     border: none;
   }
-  
+
   .autor {
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin: 1px;
   }
-  
+
   .autor-d {
     font-size: 0.6rem;
     text-align: center;
     margin: 1px;
   }
-  
+
   .github {
     height: 1rem;
   }
