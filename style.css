@@ -528,7 +528,7 @@ body {
   }
 }
 
-@media (max-width: 450px) and (orientation: portrait) {
+@media (max-width: 420px) and (orientation: portrait) {
   .header {
     margin: 4% auto;
   }
