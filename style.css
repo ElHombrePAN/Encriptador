@@ -528,6 +528,154 @@ body {
   }
 }
 
+@media (max-width: 375px) and (orientation: portrait) {
+  .header {
+    margin: 4% auto;
+  }
+
+  .label {
+    font-size: .7rem;
+  }
+
+  .article-uno {
+    order: 1;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .article-dos,
+  .article-tres {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  .article-dos{
+    order: 2;
+  }
+
+  .article-tres{
+    order: 3;
+  }
+
+  .lateral{
+    order: 4;
+    height: 18%;
+  }
+
+  .textarea-original,
+  .textarea-modificada {
+    width: 90%;
+    height: 120px;
+    font-size: small;
+  }
+
+  .textarea-original,
+  .textarea-modificada::placeholder {
+    font-size: small;
+  }
+
+  .boton {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 30%;
+    height: 4vh;
+  }
+
+  .palabras-e{
+    font-size: 1rem;
+  }
+
+  .mensaje-info {
+    font-size: 1rem;
+  }
+
+  .parrafo {
+    font-size: 0.8rem;
+  }
+
+  .imagen-b {
+    width: 35%;
+    margin-bottom: 0rem;
+  }
+
+  .notificacion {
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    text-align: center;
+    width: 40%;
+    height: 7%;
+    font-size: 0.6rem;
+  }
+
+  .notificacion .cerrar {
+    display: none;
+  }
+
+  .notificacion progress {
+    display: none;
+  }
+
+  .lateral{
+    width: 90%;
+    height: 4.55rem;
+  }
+
+  .lateral-titulo{
+    height: 4.3rem;
+  }
+
+  .h2-historial{
+    font-size: .9rem;
+    margin: 10px 0 0 0;
+  }
+
+  .sesion{
+    font-size: .7rem;
+    padding: .2rem;
+  }
+
+  .eliminar {
+    text-align: center;
+    font-size: .6rem;
+    width: 100%;
+    height: 1.4rem;
+    background-color: #1a1d1f;
+    color: #ffffff;
+    border: 2px solid #018673;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .eliminar:hover {
+    background-color: #0c181d;
+    border: 2px solid #07d6b7;
+  }
+
+  .footer {
+    background-color: #000000;
+    color: #ebebeb;
+    margin: 0;
+    border: none;
+  }
+  
+  .autor {
+    text-align: center;
+    font-size: .8rem;
+    margin: 1px;
+  }
+  
+  .autor-d {
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 1px;
+  }
+  
+  .github {
+    height: 1rem;
+  }
+}
+
 @media (max-height: 480px) and (orientation: landscape) {
   .header {
     margin: 1% 0 3% 6%;
