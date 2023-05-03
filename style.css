@@ -79,7 +79,7 @@ body {
 }
 
 .lateral-titulo {
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   border: solid 2px rgb(43, 43, 43);
   border-radius: 12px 12px 0 0;
@@ -342,7 +342,7 @@ body {
   color: #018673;
 }
 
-/*mediaq para IPAD*/
+/*mediaq basadas para IPAD Air*/
 @media (max-width: 950px) and (orientation: portrait) {
   .header {
     color: rgb(238, 243, 243);
@@ -368,7 +368,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 16%;
+    height: 13.7%;
     overflow-y: auto;
     margin-bottom: 1rem;
     align-items: center; /* Alinea los elementos hijos verticalmente al centro */
@@ -376,20 +376,21 @@ body {
     overflow-y: auto; /* Mostrar barra de scroll vertical si el contenido supera la altura */
     max-height: 27.5rem; /* Altura máxima para que solo quepan tres objetos sesiones */
   }
-  
+
   .lateral-titulo {
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    width: 10rem;
-    height: 6rem;
+    border-radius: 12px 0 0 12px;
+    height: 5.8rem;
   }
-  
+
+  .h2-historial {
+    margin-top: 1rem;
+  }
+
   .scrollmenu {
     overflow: auto;
     white-space: nowrap;
   }
-  
+
   .sesion {
     display: inline-block;
   }
@@ -423,7 +424,7 @@ body {
 
   .notificacion {
     position: fixed;
-    top: 5rem;
+    top: 0.5rem;
     right: 14rem;
     text-align: center;
     width: 40%;
@@ -436,9 +437,16 @@ body {
   }
 }
 
+/*mediaq basadas para IPAD Mini*/
+@media (max-width: 768px) and (orientation: portrait) {
+  .lateral {
+    height: 15.9%;
+  }
+}
+
 @media (max-width: 480px) and (orientation: portrait) {
   .header {
-    margin: 14% 0 4% 10%;
+    margin: 8% auto;
   }
 
   .label {
@@ -446,19 +454,34 @@ body {
   }
 
   .article-uno {
+    order: 1;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .article-dos,
   .article-tres {
     width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .article-dos{
+    order: 2;
+  }
+
+  .article-tres{
+    order: 3;
+  }
+
+  .lateral{
+    order: 4;
+    height: 18%;
   }
 
   .textarea-original,
   .textarea-modificada {
-    width: 80%;
-    height: 150px;
+    width: 90%;
+    height: 180px;
     font-size: small;
   }
 
@@ -470,8 +493,8 @@ body {
   .boton {
     text-align: center;
     font-size: 0.8rem;
-    width: 40%;
-    height: 6vh;
+    width: 30%;
+    height: 4vh;
   }
 
   .mensaje-info {
