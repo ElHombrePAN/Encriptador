@@ -49,9 +49,11 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Agregado boton para pegar texto  |
 |  ✅  |  Agregada notificaciones tipo toast  |  
 |  ✅  |  Agregado un contador de palabras encriptadas*   |
-|  ✅  |  Agregado Historial   |  
+|  ✅  |  Agregado Historial   |
+|  ✅  |  Modo responsivo**   |   
 
 *Solo contara la palabra si contiene por lo menos una letra de la llaves,  
+**Por el momento con algunas limitantes
 
 
 # ❓Funciones en desarrollo  
@@ -61,7 +63,6 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ❓ |  Mejorar interactividad  |
 |  ❓  |  Modo oscuro-claro  |
 |  ❓  |  Backgroud dinamino  |
-|  ❓  |  Modo responsivo   | 
 
 
 
