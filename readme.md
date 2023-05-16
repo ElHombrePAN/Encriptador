@@ -1,7 +1,10 @@
-# 💾Encriptador Version Beta 2.0 
+# 💾Encriptador Version Beta 3.0 
 Para probar el encriptador ingresa. Todavia es un trabajo en progreso...  
 https://elhombrepan.github.io/Encriptador/ 
-![Vistaprevia](./assets/vistaprevia.png) 
+![Vistaprevia](./assets/version3beta.png)
+![Vistaprevia](./assets/v3modal.png)
+## Version antigua
+![Vistaprevia](./assets/vistaprevia.png)    
 Para el programa ORACLE ONE NEXT EDUCATION    
 https://www.oracle.com/mx/education/oracle-next-education/
 <div align="center">
@@ -50,7 +53,8 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Agregada notificaciones tipo toast  |  
 |  ✅  |  Agregado un contador de palabras encriptadas*   |
 |  ✅  |  Agregado Historial   |
-|  ✅  |  Modo responsivo**   |   
+|  ✅  |  Restablecer historial con un solo click   |
+|  ✅  |  Eliminar sesiones previas   | 
 
 *Solo contara la palabra si contiene por lo menos una letra de la llaves,  
 **Por el momento con algunas limitantes
@@ -60,9 +64,9 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 |  Estado  |  Funcion  |
 |  -------------  |  -------------  |
-|  ❓ |  Mejorar interactividad  |
-|  ❓  |  Modo oscuro-claro  |
-|  ❓  |  Backgroud dinamino  |
+|  ❓ |  Trabajando en modo responsivo  |
+|  ❓ |  Trabajando en medidor de almacenamiento dinamico  |
+|  ❓ |  Trabajando en selector de temas  |
 
 
 
