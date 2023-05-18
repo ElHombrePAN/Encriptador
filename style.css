@@ -442,7 +442,7 @@ html {
 
 @media (max-width: 380px) {
   .textarea {
-    height: 8rem;
+    height: 7rem;
   }
 
   .article-dos img{
