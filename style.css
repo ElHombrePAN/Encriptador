@@ -27,7 +27,7 @@ html {
   min-height: 100vh;
   transition: all 0.5s ease;
   background-image: url(./assets/AS.svg);
-  background-size: cover; 
+  background-size: cover;
   color: white;
 }
 
@@ -388,4 +388,63 @@ html {
 .modal-dialog::-webkit-scrollbar-thumb {
   background-color: var(--background-color);
   border-radius: 12px;
+}
+
+@media (max-width: 650px) {
+  .header{
+    height: auto;
+  }
+
+  .contenedor {
+    grid-template-columns: 1fr;
+    height: 78vh;
+  }
+
+  .contenedor .article-uno {
+    grid-column: 1/-1;
+  }
+
+  .contenedor .article-dos {
+    grid-column: 1/2;
+  }
+
+  .contenedor .article-tres {
+    grid-column: 1/2;
+  }
+
+  .textarea {
+    height: 12rem;
+  }
+
+  .notificacion {
+    position: fixed;
+    text-align: center;
+    top: 1.2rem;
+    right: 0;
+    margin: 0 1.2rem;
+    padding: 15px;
+    width: 90%;
+    height: 8%;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    color: white;
+    /*Definimos la duración y el tipo de la animación*/
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /*Inicialmente la notificación está oculta*/
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .mensaje {
+    font-size: 1rem;
+  }
+  
+  /*Clase para mostrar la notificación*/
+  .show {
+    /*La notificación se desplaza a su posición original*/
+    transform: translateX(0);
+    /*La notificación se hace visible*/
+    opacity: 1;
+  }
 }
