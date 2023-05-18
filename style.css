@@ -94,7 +94,7 @@ html {
   border: 2px solid var(--border);
   border-radius: 12px;
   padding: 1rem;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .textarea::placeholder {
@@ -239,6 +239,10 @@ html {
   line-height: 1.3rem;
   text-align: center;
   cursor: pointer;
+}
+
+.cerrar:hover {
+  background-color: black;
 }
 
 .notificacion progress {
