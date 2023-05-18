@@ -200,7 +200,7 @@ html {
   margin: 10px;
   padding: 15px;
   width: 28%;
-  height: 10%;
+  height: auto;
   border: 2px solid var(--border);
   border-radius: 12px;
   background-color: #1a1a1a;
@@ -391,7 +391,7 @@ html {
 }
 
 @media (max-width: 650px) {
-  .header{
+  .header {
     height: auto;
   }
 
@@ -417,34 +417,40 @@ html {
   }
 
   .notificacion {
-    position: fixed;
-    text-align: center;
     top: 1.2rem;
     right: 0;
     margin: 0 1.2rem;
-    padding: 15px;
     width: 90%;
-    height: 8%;
-    border: 2px solid var(--border);
-    border-radius: 12px;
-    background-color: #1a1a1a;
-    color: white;
-    /*Definimos la duración y el tipo de la animación*/
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    /*Inicialmente la notificación está oculta*/
-    transform: translateX(100%);
-    opacity: 0;
+    height: auto;
   }
-  
-  .mensaje {
+
+  .label {
+    font-size: 0.8rem;
+  }
+
+  .botones {
+    margin: 1rem 0;
+  }
+
+  .article-dos img {
+    object-fit: contain;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .textarea {
+    height: 8rem;
+  }
+
+  .article-dos img{
+    margin: .5rem auto;
+  }
+
+  .article-dos h3{
     font-size: 1rem;
   }
-  
-  /*Clase para mostrar la notificación*/
-  .show {
-    /*La notificación se desplaza a su posición original*/
-    transform: translateX(0);
-    /*La notificación se hace visible*/
-    opacity: 1;
-  }
+
 }
