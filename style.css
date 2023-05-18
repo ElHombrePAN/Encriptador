@@ -453,4 +453,7 @@ html {
     font-size: 1rem;
   }
 
+  .article-dos p{
+    font-size: .8rem;
+  }
 }
