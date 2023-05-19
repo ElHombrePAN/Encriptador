@@ -438,6 +438,14 @@ html {
     height: 60%;
     margin-bottom: 1.6rem;
   }
+
+  .article-dos h3 {
+    font-size: 1rem;
+  }
+
+  .article-dos p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 380px) {
@@ -445,15 +453,15 @@ html {
     height: 7rem;
   }
 
-  .article-dos img{
-    margin: .5rem auto;
+  .article-dos img {
+    margin: 0.5rem auto;
   }
 
-  .article-dos h3{
+  .article-dos h3 {
     font-size: 1rem;
   }
 
-  .article-dos p{
-    font-size: .8rem;
+  .article-dos p {
+    font-size: 0.8rem;
   }
 }
