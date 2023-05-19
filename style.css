@@ -328,7 +328,7 @@ html {
 
 .titulo-historial p {
   font-size: 1rem;
-  width: 40rem;
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -361,7 +361,7 @@ html {
   border: none;
   color: #ffffff;
   border-radius: 10px;
-  width: 20rem;
+  width: 80%;
   height: 2rem;
   cursor: pointer;
 }
