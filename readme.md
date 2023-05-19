@@ -60,6 +60,7 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 |  ✅  |  Agregado Historial   |
 |  ✅  |  Restablecer historial con un solo click   |
 |  ✅  |  Eliminar sesiones previas   | 
+|  ✅  |  Responsivo   | 
 
 *Solo contara la palabra si contiene por lo menos una letra de la llaves,  
 **Por el momento con algunas limitantes
@@ -69,8 +70,6 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 |  Estado  |  Funcion  |
 |  -------------  |  -------------  |
-|  ❓ |  Trabajando en modo responsivo  |
-|  ❓ |  Trabajando en medidor de almacenamiento dinamico  |
 |  ❓ |  Trabajando en selector de temas  |
 
 
