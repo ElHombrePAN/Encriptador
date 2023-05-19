@@ -459,6 +459,10 @@ html {
   .br {
     display: none;
   }
+
+  .eliminar {
+    height: auto;
+  }
 }
 
 @media (max-width: 380px) {
@@ -520,5 +524,9 @@ html {
 
   .footer img {
     height: 0.7rem;
+  }
+
+  .eliminar {
+    height: auto;
   }
 }
