@@ -5,8 +5,9 @@ https://elhombrepan.github.io/Encriptador/
 ![Vistaprevia](./assets/v3modal.png)  
 
 Modo responsivo  
-![Vistaprevia](./assets/responsivo1.jpg)
-![Vistaprevia](./assets/responsivo2.jpg)
+![Vistaprevia](./assets/EResponsivo.jpg)
+![Vistaprevia](./assets/EResponsivo2.jpg)
+![Vistaprevia](./assets/ModalResponsivo.jpg)
 ## Version antigua
 ![Vistaprevia](./assets/vistaprevia.png)    
 Para el programa ORACLE ONE NEXT EDUCATION    
