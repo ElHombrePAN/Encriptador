@@ -2,7 +2,11 @@
 Para probar el encriptador ingresa. Todavia es un trabajo en progreso...  
 https://elhombrepan.github.io/Encriptador/ 
 ![Vistaprevia](./assets/version3beta.png)
-![Vistaprevia](./assets/v3modal.png)
+![Vistaprevia](./assets/v3modal.png)  
+
+Modo responsivo  
+![Vistaprevia](./assets/responsivo1.jpg)
+![Vistaprevia](./assets/responsivo2.jpg)
 ## Version antigua
 ![Vistaprevia](./assets/vistaprevia.png)    
 Para el programa ORACLE ONE NEXT EDUCATION    
