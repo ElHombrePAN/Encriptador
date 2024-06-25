@@ -1,14 +1,34 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
 body{
-    background-color: #1f1f1f;
+    background-color: #545454;
     color: #d3d3d3;
 }
 
-.titulo {
-    font-size: 6rem;
+.header {
+    color: antiquewhite;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
+    height: auto;
+    margin: auto;
 }
 
-.texto {
-    font-size: 2rem;
-    text-align: center;
+.header img {
+    vertical-align: middle;
+}
+
+.textarea {
+    color: #ffffff;
+    background-color: #1a1a1a;
+    width: 50%;
+    height: 20rem;
+    resize: none;
+    border: 2px solid #0a76b1;
+    border-radius: 12px;
+    padding: 1rem;
+    cursor: auto;
 }
