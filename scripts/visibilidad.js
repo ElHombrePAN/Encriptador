@@ -3,13 +3,13 @@ const inputTextoOriginal = document.getElementById("textarea_uno");
 // Luego, encontramos el cuadro de texto donde se muestra el texto encriptado
 const outputTextoEncriptado = document.getElementById("textarea_dos");
 
-    // Cuando el usuario escribe algo en el cuadro de texto original
-    inputTextoOriginal.addEventListener("input", () => {
-        // Copiamos lo que el usuario escribió al cuadro de texto encriptado
-        outputTextoEncriptado.value = inputTextoOriginal.value; // Corrección en la referencia
-        // Llamamos a una función para mostrar u ocultar partes de la página
-        actualizarVisibilidad();
-    });
+// Cuando el usuario escribe algo en el cuadro de texto original
+inputTextoOriginal.addEventListener("input", () => {
+    // Copiamos lo que el usuario escribió al cuadro de texto encriptado
+    outputTextoEncriptado.value = inputTextoOriginal.value; // Corrección en la referencia
+    // Llamamos a una función para mostrar u ocultar partes de la página
+    actualizarVisibilidad();
+});
 
 
 // Esta es la función que muestra u oculta partes de la página
@@ -27,11 +27,19 @@ function actualizarVisibilidad() {
         seccionSinMensaje.style.display = "block";
         // Ocultamos la sección del cuadro de texto encriptado
         seccionConMensaje.style.display = "none";
+        document.getElementById("btn_limpiar").disabled = true;
+        document.getElementById("btn_encriptar").disabled = true;
+        document.getElementById("btn_desencriptar").disabled = true;
+        document.getElementById("btn_guardar").disabled = true;
     } else {
         // Si hay algo escrito, ocultamos la sección que dice que no hay ningún mensaje
         seccionSinMensaje.style.display = "none";
         // Y mostramos la sección del cuadro de texto encriptado
         seccionConMensaje.style.display = "block";
+        document.getElementById("btn_limpiar").disabled = false;
+        document.getElementById("btn_encriptar").disabled = false;
+        document.getElementById("btn_desencriptar").disabled = false;
+        document.getElementById("btn_guardar").disabled = false;
     }
 }
 

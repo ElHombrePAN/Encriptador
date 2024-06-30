@@ -17,12 +17,12 @@
             <textarea id="textarea_uno" class="textarea" autocomplete="off"
                       placeholder="Ingresa el texto que deseas encriptar aqui..."
                       cols="50" rows="10" wrap="hard" required autofocus></textarea>
-            <button name="encriptar" disabled>Encriptar</button>
-            <button name="desencriptar" disabled>Desencriptar</button>
-            <button name="pegar">Pegar</button>
-            <button name="limpiar" disabled>Limpiar</button>
-            <button name="historial">Historial</button>
-            <button name="guardar" disabled>Guardar</button>
+            <button id="btn_encriptar" name="encriptar" disabled>Encriptar</button>
+            <button id="btn_desencriptar" name="desencriptar" disabled>Desencriptar</button>
+            <button id="btn_pegar" name="pegar">Pegar</button>
+            <button id="btn_limpiar" name="limpiar" disabled onclick="limpiar()">Limpiar</button>
+            <button id="btn_historial" name="historial">Historial</button>
+            <button id="btn_guardar" name="guardar" disabled>Guardar</button>
         </article>
         <article id="seccion_dos" class="seccion_dos">
             <img src="./assets/info.svg" alt="">
@@ -32,7 +32,7 @@
         <article id="seccion_tres" class="seccion_tres">
             <textarea id="textarea_dos" class="textarea" cols="50" rows="10" wrap="hard"
                       disabled readonly></textarea>
-            <button name="copiar">Copiar</button>
+            <button id="btn_copiar" name="copiar">Copiar</button>
         </article>
     </section>
 </main>
@@ -41,7 +41,9 @@
     <p>Repositorio disponible en Github</p>
 </footer>
 
-<script src="./scripts/textareas.js"></script>
+<script src="scripts/visibilidad.js"></script>
+<script src="scripts/limpiar.js"></script>
+
 </body>
 
 
