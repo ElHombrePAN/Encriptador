@@ -6,11 +6,11 @@ pegar.addEventListener("click", (event) => {
     navigator.clipboard.readText()
         .then((texto) => {
             document.getElementById("textarea_uno").value = texto;
-            actualizarVisibilidad();
+            outputTextoEncriptado.value = texto; //Variable definida en visibilidad.js
+            actualizarVisibilidad(); //llamando funcion
         })
         .catch((error) => {
             console.error("Error al pegar el texto: " + error);
         });
 });
-
 //Usando promesas en lugar de If-else

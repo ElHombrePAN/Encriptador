@@ -1,4 +1,3 @@
-// Primero, encontramos el cuadro de texto donde el usuario escribe
 const inputTextoOriginal = document.getElementById("textarea_uno");
 // Luego, encontramos el cuadro de texto donde se muestra el texto encriptado
 const outputTextoEncriptado = document.getElementById("textarea_dos");
