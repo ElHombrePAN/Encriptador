@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnDesencriptar = document.getElementById("btn_desencriptar");
     const btnLimpiar = document.getElementById("btn_limpiar");
 
-    let contadorPalabras = 0;
-
     function encriptar(texto) {
         return texto.replace(/[aeiou]/g, match => llaves[match]);
     }
@@ -27,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function procesar(texto, accion) {
         if (texto.trim() === "") {
-            alert("No ingresaste ningún texto");
+            console.log("No ingresaste ningún texto"); // Reemplazar alert con console.log por ahora
             return "";
         }
         return accion === "encriptar" ? encriptar(texto) : desencriptar(texto);
@@ -40,35 +38,20 @@ document.addEventListener("DOMContentLoaded", function() {
         if (resultado) {
             textareaDos.value = resultado;
             textareaDos.disabled = false;
-            btnLimpiar.disabled = false;
-            if (accion === "encriptar") {
-                contadorPalabras += contarPalabras(texto);
-                alert(`Texto encriptado correctamente. Palabras encriptadas: ${contadorPalabras}`);
-            } else {
-                alert("Texto desencriptado correctamente");
-            }
+            console.log(`Texto ${accion}ado correctamente`); // Reemplazar alert con console.log por ahora
         }
     }
 
-    function contarPalabras(texto) {
-        return texto.split(/\s+/).filter(Boolean).length;
-    }
+    textareaUno.addEventListener("input", () => {
+        textareaDos.value = textareaUno.value;
+        actualizarVisibilidad();
+    });
 
-    function actualizarBotones() {
-        const texto = textareaUno.value.trim();
-        const hayTexto = texto.length > 0;
-        btnEncriptar.disabled = !hayTexto;
-        btnDesencriptar.disabled = !hayTexto;
-        btnLimpiar.disabled = !hayTexto && textareaDos.value.trim().length === 0;
-    }
-
-    textareaUno.addEventListener("input", actualizarBotones);
     btnEncriptar.addEventListener("click", () => manejarProceso("encriptar"));
     btnDesencriptar.addEventListener("click", () => manejarProceso("desencriptar"));
     btnLimpiar.addEventListener("click", () => {
         textareaUno.value = "";
         textareaDos.value = "";
-        actualizarBotones();
+        actualizarVisibilidad();
     });
 });
-
