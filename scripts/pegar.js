@@ -13,4 +13,3 @@ pegar.addEventListener("click", (event) => {
             console.error("Error al pegar el texto: " + error);
         });
 });
-//Usando promesas en lugar de If-else
