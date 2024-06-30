@@ -5,8 +5,5 @@ document.getElementById("btn_limpiar").addEventListener("click", limpiar);
 function limpiar() {
     // Limpiamos el contenido del textarea con el ID "textarea_uno"
     document.getElementById("textarea_uno").value = "";
-    // Llamamos a la función actualizarVisibilidad si está definida
-    if (typeof actualizarVisibilidad === "function") {
-        actualizarVisibilidad();
-    }
+    actualizarVisibilidad();
 }
