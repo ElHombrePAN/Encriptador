@@ -1,3 +1,4 @@
+// Primero, encontramos el cuadro de texto donde el usuario escribe
 const inputTextoOriginal = document.getElementById("textarea_uno");
 // Luego, encontramos el cuadro de texto donde se muestra el texto encriptado
 const outputTextoEncriptado = document.getElementById("textarea_dos");
@@ -29,7 +30,7 @@ function actualizarVisibilidad() {
         document.getElementById("btn_limpiar").disabled = true;
         document.getElementById("btn_encriptar").disabled = true;
         document.getElementById("btn_desencriptar").disabled = true;
-        document.getElementById("btn_guardar").disabled = true;
+        //document.getElementById("btn_guardar").disabled = true;
     } else {
         // Si hay algo escrito, ocultamos la sección que dice que no hay ningún mensaje
         seccionSinMensaje.style.display = "none";
@@ -38,7 +39,7 @@ function actualizarVisibilidad() {
         document.getElementById("btn_limpiar").disabled = false;
         document.getElementById("btn_encriptar").disabled = false;
         document.getElementById("btn_desencriptar").disabled = false;
-        document.getElementById("btn_guardar").disabled = false;
+        //document.getElementById("btn_guardar").disabled = false;
     }
 }
 
