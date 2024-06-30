@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="El HombrePAN">
-    <meta name="description" content="Un encriptador sencillo como parte del desafio del programa Oracle One con Alura">
     <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<header>
+    <h1 class="titulo"><img src="./assets/alura.svg" alt="logo de Alura"> Encriptador</h1>
+</header>
+
 <main>
-    <header class="header">
-        <h1 class="titulo"><img src="./assets/alura.svg" alt="logo de Alura"> Encriptador</h1>
-    </header>
     <section>
-        <article>
-            <textarea class="textarea" placeholder="Ingrese el texto que deseas encriptar aquí... " name="texto"
-                      minlength="1" autofocus id="textoOriginal"></textarea>
+        <article id="seccion_uno" class="seccion_uno">
+            <textarea id="textarea_uno" class="textarea" autocomplete="off"
+                      placeholder="Ingresa el texto que deseas encriptar aqui..."
+                      cols="50" rows="10" wrap="hard" required autofocus></textarea>
+            <button name="encriptar" disabled>Encriptar</button>
+            <button name="desencriptar" disabled>Desencriptar</button>
+            <button name="pegar">Pegar</button>
+            <button name="limpiar" disabled>Limpiar</button>
+            <button name="historial">Historial</button>
+            <button name="guardar" disabled>Guardar</button>
         </article>
-        <article>
-            <textarea class="textarea"></textarea>
+        <article id="seccion_dos" class="seccion_dos">
+            <img src="./assets/info.svg" alt="">
+            <p>Ningun mensaje fue encontrado</p>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </article>
+        <article id="seccion_tres" class="seccion_tres">
+            <textarea id="textarea_dos" class="textarea" cols="50" rows="10" wrap="hard"
+                      disabled readonly></textarea>
+            <button name="copiar">Copiar</button>
         </article>
     </section>
 </main>
+
+<footer>
+    <p>Repositorio disponible en Github</p>
+</footer>
+
+<script src="./scripts/textareas.js"></script>
 </body>
+
+
 </html>
-<!-- Modificando base de encriptador Alura -->
