@@ -1,6 +1,8 @@
 # Encriptador
 Encriptador AluraLatam  
-Iniciando el entorno aun si CCS 
+
+## Primer diseño de CCS
+
 
 - Se añade dinamismo en la forma de mostrar los Textareas  
 Solo aparecera el segundo textarea si se detecta texto
@@ -10,6 +12,9 @@ Solo aparecera el segundo textarea si se detecta texto
 - Primera version de encriptar-desencriptar
 - Implementados botones de copiar y pegar
 - Se agrega un fondo para no perder la vista
+
+
+Aun no funciona los botones de Historial y Guardar
 
 
 ```Version 1 en desarrollo```  
