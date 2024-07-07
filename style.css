@@ -130,3 +130,42 @@ html {
     background-color: #1a1a1a;
     border: 1px solid #19659b;
 }
+
+.footer {
+    background-color: rgb(17,17,17);
+    color: white;
+    margin: 0;
+    border: none;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 1px;
+}
+
+.footer img {
+    height: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:link {
+    color: #19659b;
+}
+
+.link:visited {
+    color: #19659b;
+}
+
+.autor {
+    text-align: center;
+    font-size: 1rem;
+    margin: 1px;
+}
