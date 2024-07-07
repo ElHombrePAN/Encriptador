@@ -39,7 +39,7 @@ html {
     margin: auto;
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr,1fr;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 1rem;
 }
 
