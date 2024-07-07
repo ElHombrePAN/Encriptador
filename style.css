@@ -14,6 +14,10 @@ body{
     display: none;
 }
 
+.seccion_cuatro {
+    display: none;
+}
+
 .textarea {
     background-color: #51575b;
     color: #e5edf3;
