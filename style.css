@@ -131,6 +131,11 @@ html {
     border: 1px solid #19659b;
 }
 
+.boton_copiar:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #19659b;
+}
+
 .footer {
     background-color: rgb(17,17,17);
     color: white;
