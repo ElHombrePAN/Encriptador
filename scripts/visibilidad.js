@@ -17,14 +17,8 @@ function actualizarVisibilidad() {
     if (texto === "") {
         seccionSinMensaje.style.display = "block";
         seccionConMensaje.style.display = "none";
-        document.getElementById("btn_limpiar").disabled = true;
-        document.getElementById("btn_encriptar").disabled = true;
-        document.getElementById("btn_desencriptar").disabled = true;
     } else {
         seccionSinMensaje.style.display = "none";
         seccionConMensaje.style.display = "block";
-        document.getElementById("btn_limpiar").disabled = false;
-        document.getElementById("btn_encriptar").disabled = false;
-        document.getElementById("btn_desencriptar").disabled = false;
     }
 }

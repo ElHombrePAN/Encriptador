@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#19659B">
     <title>Encriptador Alura</title>
+    <!--Meta etiquetas-->
     <meta name="description" content="El encriptador de texto es un desafio por parte de Alura Latam, este ejemplo fue
     desarollado por Moises Ramirez. repositorio disponible en Github MramDev">
+    <meta name="theme-color" content="#19659B">
+    <!--Hojas de estilo cargadas-->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assets/alura.svg" type="image/x-icon">
+    <!--Iconos cargados incluyendo version movil-->
     <link rel="apple-touch-icon" href="./assets/alura.svg">
+    <link rel="shortcut icon" href="./assets/alura.svg" type="image/x-icon">
+    <!--Tipografia-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body class="body">
 
+<!--Header-->
 <header class="header">
     <h1 class="titulo"><img src="./assets/alura.svg" alt="logo de Alura"> Encriptador</h1>
 </header>
 
+<!--Creando el Div de las notificaciones-->
+<div class="notificacion" id="notificacion">
+    <span class="mensaje"></span>
+    <button class="cerrar" id="cerrar">X</button>
+    <progress></progress>
+</div>
+
+<!--Bloquue principal para los cuadros de la textarea-->
 <main>
     <section class="contenedor_principal">
         <article id="seccion_uno" class="seccion_uno">
@@ -28,17 +41,16 @@
                       autocomplete="off"
                       spellcheck="false"
                       placeholder="Ingresa el texto que deseas encriptar aqui..."
-                      required autofocus></textarea>
+                      required autofocus>
+            </textarea>
             <section class="contenedor_botones">
                 <button id="btn_encriptar"
                         name="encriptar"
-                        class="boton"
-                        disabled>Encriptar
+                        class="boton">Encriptar
                 </button>
                 <button id="btn_desencriptar"
                         name="desencriptar"
-                        class="boton"
-                        disabled>Desencriptar
+                        class="boton">Desencriptar
                 </button>
                 <button id="btn_pegar"
                         name="pegar"
@@ -46,17 +58,14 @@
                 </button>
                 <button id="btn_limpiar"
                         name="limpiar"
-                        disabled
                         class="boton">Limpiar
                 </button>
                 <button id="btn_historial"
                         name="historial"
-                        disabled
                         class="boton">Historial
                 </button>
                 <button id="btn_guardar"
                         name="guardar"
-                        disabled
                         class="boton">Guardar
                 </button>
             </section>
@@ -78,18 +87,17 @@
                     name="copiar" class="boton_copiar">Copiar
             </button>
         </article>
-        <article id="seccion_cuatro" class="seccion_cuatro">
-            <h3>Historial de Sesiones</h3>
-        </article>
     </section>
 </main>
 
+<!--Area del footer-->
 <footer class="footer">
     <h5 class="autor"><a href="https://github.com/ElHombrePAN/Encriptador" class="link">
-        Repositorio disponible en Github <img src="./assets/github-mark.svg"></a> </h5>
+        Repositorio disponible en Github <img src="./assets/github-mark.svg"></a></h5>
     <p>Creado por Moises Ramirez para el Desafio de encriptador para Alura Latam </p>
 </footer>
 
+<!--Scripts activos para el Encriptador-->
 <script src="scripts/visibilidad.js"></script>
 <script src="scripts/limpiar.js"></script>
 <script src="scripts/copiar.js"></script>
@@ -97,7 +105,7 @@
 <script src="scripts/encriptar.js"></script>
 <script src="scripts/guardar.js"></script>
 <script src="scripts/historial.js"></script>
+<script src="scripts/notificaciones.js"></script>
 
 </body>
 </html>
-<!--Cambios menores -->

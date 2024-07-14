@@ -8,6 +8,7 @@ pegar.addEventListener("click", (event) => {
             document.getElementById("textarea_uno").value = texto;
             outputTextoEncriptado.value = texto; //Variable definida en visibilidad.js
             actualizarVisibilidad(); //llamando funcion
+            mostrarNotificacion("Texto copiado correctamente");
         })
         .catch((error) => {
             console.error("Error al pegar el texto: " + error);

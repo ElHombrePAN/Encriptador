@@ -30,6 +30,8 @@ function desencriptar(texto) {
 function procesar(texto, accion) {
     if (texto.trim() === "") {
         console.log("No ingresaste ningún texto"); // Usando console.log en lo que estan listas las notificaciones
+        mostrarNotificacion();
+        mostrarNotificacion("No ingresaste ningún texto");
         return "";
     } else
     return accion === "encriptar" ? encriptar(texto) : desencriptar(texto);
@@ -47,6 +49,7 @@ function manejarProceso(accion) {
         // Generar mensaje adecuado basado en la acción
         let mensaje = accion === "encriptar" ? "Texto encriptado correctamente" : "Texto desencriptado correctamente";
         console.log(mensaje); // Solo para usar console.log en lo que estan las notificaciones
+        mostrarNotificacion(mensaje);
     }
 }
 
@@ -62,5 +65,5 @@ btnLimpiar.addEventListener("click", () => {
     textareaUno.value = "";
     textareaDos.value = "";
     actualizarVisibilidad();
-    mostrarNotificacion(); //Aun en beta no se agrega al repositorio.
+    mostrarNotificacion("Limpieza realizada"); //Aun en beta no se agrega al repositorio.
 });
