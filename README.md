@@ -7,6 +7,8 @@ https://encriptador.mram.dev/
 ![Vistaprevia](./assets/imagenprevia.png)
 ### Se agregan MetaTags  
 ![Vistaprevia](./assets/previametatagX.png)
+![Vistaprevia](./assets/previametatagDG.png)
+
 
 # 📖Caracterisiticas solicitadas
 
