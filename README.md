@@ -41,21 +41,21 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 # Funciones adicionales agregadas  
 
-|  Estado  |  Funcion  |
+|  Estado |  Funcion  |
 |  -------------  |  -------------  |
-|  ✅  |  Modo espejo Textarea dinamica (Solo aparece si detecta texto)  |
-|  ✅  |  Agregado el boton restablecer area de trabajo, evita recargar la pagina |  
-|  ✅  |  Agregado boton para pegar texto |
-|  ✅  |  Agregada notificaciones tipo toast |
+|  ✅ |  Modo espejo Textarea dinamica (Solo aparece si detecta texto)  |
+|  ✅ |  Agregado el boton restablecer area de trabajo, evita recargar la pagina |  
+|  ✅ |  Agregado boton para pegar texto |
+|  ✅ |  Agregada notificaciones tipo toast |
+|  ✅ | Historial para guardar sesiones         |
+|  ✅ | Restablecer historial con un solo click |
+|  ✅ | Poder eliminar sesiones guardadas       | 
 
 # ❓Funciones en desarrollo
 
 |  Estado | Funcion                                 |
 |  -------------  |-----------------------------------------|
 |  ❓ | Contador de palabras encriptadas*       |
-|  ❓ | Historial para guardar sesiones         |
-|  ❓ | Restablecer historial con un solo click |
-|  ❓ | Poder eliminar sesiones guardadas       | 
 |  ❓ | Agregar responsividad                   | 
 |  ❓ | Medidor de LocalStorage para sesiones   |
 
