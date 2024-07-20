@@ -87,9 +87,10 @@ html {
     height: 16rem;
     resize: none;
     border: 3px solid #19659b;
-    border-radius: 16px;
+    border-radius: 4px;
     padding: 1rem;
     cursor: auto;
+    scrollbar-color: #19659b #1a1a1a ;
 }
 
 .textarea::placeholder {
@@ -367,7 +368,7 @@ html {
     color: white;
 }
 
-/*Dando estilo a las barras de desplazamiento*/
+/*Dando estilo a las barras de desplazamiento
 .textarea::-webkit-scrollbar {
     width: 10px;
 }
@@ -385,3 +386,4 @@ html {
     background-color: #19659b;
     border-radius: 12px;
 }
+*/
