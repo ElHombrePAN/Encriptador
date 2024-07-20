@@ -8,6 +8,8 @@ https://encriptador.mram.dev/
 ### Se agregan MetaTags  
 ![Vistaprevia](./assets/previametatagX.png)
 ![Vistaprevia](./assets/previametatagDG.png)
+![Vistaprevia](./assets/responsive.jpg)
+
 
 
 # 📖Caracterisiticas solicitadas
@@ -41,21 +43,21 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 # Funciones adicionales agregadas  
 
-|  Estado |  Funcion  |
-|  -------------  |  -------------  |
-|  ✅ |  Modo espejo Textarea dinamica (Solo aparece si detecta texto)  |
-|  ✅ |  Agregado el boton restablecer area de trabajo, evita recargar la pagina |  
-|  ✅ |  Agregado boton para pegar texto |
-|  ✅ |  Agregada notificaciones tipo toast |
-|  ✅ | Historial para guardar sesiones         |
-|  ✅ | Restablecer historial con un solo click |
-|  ✅ | Poder eliminar sesiones guardadas       | 
-
+|  Estado | Funcion                                                                 |
+|  -------------  |-------------------------------------------------------------------------|
+|  ✅ | Modo espejo Textarea dinamica (Solo aparece si detecta texto)           |
+|  ✅ | Agregado el boton restablecer area de trabajo, evita recargar la pagina |  
+|  ✅ | Agregado boton para pegar texto                                         |
+|  ✅ | Agregada notificaciones tipo toast                                      |
+|  ✅ | Historial para guardar sesiones                                         |
+|  ✅ | Restablecer historial con un solo click                                 |
+|  ✅ | Poder eliminar sesiones guardadas                                       | 
+|  ✅ | Agregar responsividad primera version                                   |
 # ❓Funciones en desarrollo
 
-|  Estado | Funcion                                 |
-|  -------------  |-----------------------------------------|
-|  ❓ | Contador de palabras encriptadas*       |
-|  ❓ | Agregar responsividad                   | 
-|  ❓ | Medidor de LocalStorage para sesiones   |
+|  Estado | Funcion                               |
+|  -------------  |---------------------------------------|
+|  ❓ | Contador de palabras encriptadas*     |
+|  ❓ | Medidor de LocalStorage para sesiones |
+|  ❓ | Lipieza de codigo                     | 
 
