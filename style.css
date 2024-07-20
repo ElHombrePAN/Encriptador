@@ -387,3 +387,188 @@ html {
     border-radius: 12px;
 }
 */
+
+@media (min-width: 320px) and (max-width: 650px) {
+
+    .contenedor_principal {
+        display: block;
+    }
+
+    .textarea {
+        height: 9rem;
+    }
+
+    .seccion_uno {
+        width: 100%;
+        height: 50%;
+        margin: auto;
+    }
+
+    .seccion_dos {
+        font-size: .8rem;
+        margin: auto;
+    }
+
+    .seccion_dos img {
+        object-fit: contain;
+        width: 50%;
+        height: 40%;
+        margin: 1rem auto;
+    }
+
+    .boton {
+        height: auto;
+        font-size: .6rem;
+    }
+
+    .boton_copiar {
+        height: 2rem;
+        font-size: .6rem;
+    }
+
+    .textarea {
+        font-size: .8rem;
+    }
+
+    .notificacion {
+        position: fixed;
+        text-align: center;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: .5rem;
+        width: 100%;
+        height: auto;
+        border: 2px solid var(--border);
+        border-radius: 0px;
+        background-color: #1a1a1a;
+        color: white;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        transform: translateX(100%); /*Efecto para deslizamiento*/
+        opacity: 0;
+    }
+
+    .mensaje { /*Tamaño para mensaje de notificacion*/
+        font-size: .9rem;
+    }
+
+    .show {
+        /*La notificación se desplaza a su posición original*/
+        transform: translateX(0);
+        /*La notificación se hace visible*/
+        opacity: 1;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+    }
+
+    .modal.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-dialog {
+        display: grid;
+        grid-auto-columns: 1fr; /* Esta es la línea que hay que añadir */
+        max-width: 100%;
+        max-height: 100%;
+        gap: 1rem;
+        overflow-y: auto;
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: smaller;
+    }
+
+    .eliminar {
+        margin-top: 1rem;
+        height: 2rem;
+        width: 100%;
+        color: #ffffff;
+        background-color: #19659b;
+        border: 4px solid #19659b;
+        border-radius: 12px;
+        font-size: .8rem;
+    }
+
+    .eliminar:hover {
+        background-color: #111111;
+        border: 4px solid #168f7b;
+    }
+
+    .titulo-historial {
+        grid-column: 1/3;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-color: #19659b;
+        border-radius: 12px;
+        padding: 0.5rem;
+    }
+
+    .titulo-historial p {
+        font-size: .8rem;
+        width: auto;
+        padding: 0.5rem;
+    }
+
+
+    .sesion {
+        text-align: center;
+        border: 3px solid #19659b;
+        border-radius: 12px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .sesion h4{
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+    .p-sesion {
+        font-size: .8rem;
+        font-weight: bold;
+        color: #19659b;
+    }
+
+    .s-fecha {
+        color: #78e5ab;
+    }
+
+    .sesion:hover {
+        background-color: #353535;
+    }
+
+    .close-modal {
+        background-color: #1a1a1a;
+        border: none;
+        color: #ffffff;
+        border-radius: 10px;
+        width: 40%;
+        height: 2rem;
+        cursor: pointer;
+        font-size: .6rem;
+    }
+
+    .close-modal:hover {
+        border: 4px solid #168f7b;
+        background-color: #1a1a1a;
+        color: white;
+    }
+
+}
