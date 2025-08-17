@@ -4,7 +4,7 @@ botonCopiar.addEventListener("click", () => {
     const texto = document.getElementById("textarea_dos").value.trim();
 
     if (texto === "") {
-        mostrarNotificacion("El campo estqa vacio")
+        mostrarNotificacion("El campo está vacío");
         return;
     }
 

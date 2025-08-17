@@ -30,10 +30,9 @@ function desencriptar(texto) {
 function procesar(texto, accion) {
     if (texto.trim() === "") {
         console.log("No ingresaste ningún texto"); // Usando console.log en lo que estan listas las notificaciones
-        mostrarNotificacion();
         mostrarNotificacion("No ingresaste ningún texto");
         return "";
-    } else
+    }
     return accion === "encriptar" ? encriptar(texto) : desencriptar(texto);
 }
 
